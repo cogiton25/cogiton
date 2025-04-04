@@ -11,12 +11,13 @@ category:
 description: Put your knowledge of neuroscience terms to the test with five interactive Wordle games!
 ---
 
+
 <!-- Optional visual separator between description and quiz -->
 <hr class="quiz-separator">
 
-<div class="wordle-quiz-container">
+<div class="quiz-container">
   <!-- Quiz Menu -->
-  <div class="wordle-quiz-menu" style="text-align: center; margin-bottom: 20px;">
+  <div class="quiz-menu" style="text-align: center; margin-bottom: 20px;">
     <button onclick="showQuestion(1)" class="quiz-menu-button">1</button>
     <button onclick="showQuestion(2)" class="quiz-menu-button">2</button>
     <button onclick="showQuestion(3)" class="quiz-menu-button">3</button>
@@ -24,67 +25,35 @@ description: Put your knowledge of neuroscience terms to the test with five inte
     <button onclick="showQuestion(5)" class="quiz-menu-button">5</button>
   </div>
   
-  <!-- Question 1 - Wordle Game -->
-  <div class="quiz-question" id="question-1">
-    <iframe src="https://stephan-poppe.shinyapps.io/shiny-wordle/" title="Wordle Puzzle 1" width="100%" height="600px" style="border: none;"></iframe>
+  <!-- insula -->
+  <div class="quiz-question" id="question-1" style="display: none;">
+   <iframe src="https://mywordle.strivemath.com/?word=ebjxwe" width="100%" height="600px" style="border: none;"></iframe>
+
   </div>
   
-  <!-- Question 2 -->
-  <div class="quiz-question" id="question-2" style="display: none;">
-    <div class="statement">Adults "look like" their names, but children do not.</div>
-    <div class="button-group">
-      <button class="real-btn" onclick="selectChoice('Real', 2, event)">Real</button>
-      <button class="not-real-btn" onclick="selectChoice('Not Real', 2, event)">Not real</button>
-    </div>
-    <button class="confirm-btn" onclick="confirmChoice(2)">Confirm</button>
-    <div class="answer" id="answer-2">
-      <strong>Real.</strong> One study published in 2024 used a variety of methodological approaches—including a machine-learning paradigm comparing images of people with the same given name, a face-to-name matching task, and a simulation wherein children's faces were digitally aged to adulthood—to determine that the face–name matching effect is age-dependent. In other words, people "look like" their names not because they were named based on their appearance at birth, but due to a self-fulfilling prophecy mechanism where facial appearance develops over time in line with the expectations of the given name.
-      <br>(<a href="https://doi.org/10.1073/pnas.2405334121" target="_blank">DOI: 10.1073/pnas.2405334121</a>)
-    </div>
+  <!-- cortical -->
+  <div class="quiz-question" id="question-2" style="display: none;"> 
+    <iframe src="https://mywordle.strivemath.com/?word=yciwtgwz" width="100%" height="600px" style="border: none;"></iframe>
+
   </div>
   
-  <!-- Question 3 -->
+  <!-- basal -->
   <div class="quiz-question" id="question-3" style="display: none;">
-    <div class="statement">Tickling can affect decision-making in rats.</div>
-    <div class="button-group">
-      <button class="real-btn" onclick="selectChoice('Real', 3, event)">Real</button>
-      <button class="not-real-btn" onclick="selectChoice('Not Real', 3, event)">Not real</button>
-    </div>
-    <button class="confirm-btn" onclick="confirmChoice(3)">Confirm</button>
-    <div class="answer" id="answer-3">
-      <strong>Real.</strong> "Laughing Rats Are Optimistic" – Tickling rats induces positive emotions, as evidenced by their 50-kHz ultrasonic vocalizations (i.e., "laughter"), which biases their decision-making toward optimism when interpreting ambiguous cues.
-      <br>(<a href="https://doi.org/10.1371/journal.pone.0051959" target="_blank">DOI: 10.1371/journal.pone.0051959</a>)
-    </div>
+    <iframe src="https://mywordle.strivemath.com/?word=xojdw" width="100%" height="600px" style="border: none;"></iframe>
+
   </div>
   
-  <!-- Question 4 -->
+  <!-- brain -->
   <div class="quiz-question" id="question-4" style="display: none;">
-    <div class="statement">People with schizophrenia are more unpredictable and violent than the general population.</div>
-    <div class="button-group">
-      <button class="real-btn" onclick="selectChoice('Real', 4, event)">Real</button>
-      <button class="not-real-btn" onclick="selectChoice('Not Real', 4, event)">Not real</button>
-    </div>
-    <button class="confirm-btn" onclick="confirmChoice(4)">Confirm</button>
-    <div class="answer" id="answer-4">
-      <strong>Not Real.</strong> Although some epidemiological reviews have reported higher rates of violence among individuals with schizophrenia compared to the general population, much of this violence is attributable to a small subgroup with co-occurring substance abuse and a prior history of violence.
-      <br>(<a href="https://doi.org/10.1371/journal.pmed.1000120" target="_blank">DOI: 10.1371/journal.pmed.1000120</a> ; <a href="https://doi.org/10.1016/S0920-9964(03)00091-4" target="_blank">DOI: 10.1016/S0920-9964(03)00091-4</a>)
-    </div>
+    <iframe src="https://mywordle.strivemath.com/?word=xfrly" width="100%" height="600px" style="border: none;"></iframe>
+
   </div>
   
-  <!-- Question 5 -->
+  <!-- think -->
   <div class="quiz-question" id="question-5" style="display: none;">
-    <div class="statement">Music can be reconstructed from human auditory cortex fMRI activity using nonlinear decoding models.</div>
-    <div class="button-group">
-      <button class="real-btn" onclick="selectChoice('Real', 5, event)">Real</button>
-      <button class="not-real-btn" onclick="selectChoice('Not Real', 5, event)">Not real</button>
-    </div>
-    <button class="confirm-btn" onclick="confirmChoice(5)">Confirm</button>
-    <div class="answer" id="answer-5">
-      <strong>Not Real.</strong> The study titled "Music can be reconstructed from human auditory cortex activity using nonlinear decoding models" investigated how the human brain processes music by analyzing intracranial EEG data from 29 patients who listened to a Pink Floyd song. Researchers used a stimulus reconstruction approach, previously applied in speech studies, to reconstruct a recognizable song from direct neural recordings, thereby providing insights into the neural dynamics of music perception.
-      <br>(<a href="https://doi.org/10.1371/journal.pbio.3002176" target="_blank">DOI: 10.1371/journal.pbio.3002176</a>)
-    </div>
+    <iframe src="https://mywordle.strivemath.com/?word=pvzqv" width="100%" height="600px" style="border: none;"></iframe>
+
   </div>
-</div>
 
 <style>
 /* General styles for the quiz interface */
@@ -120,14 +89,14 @@ button {
 }
 
 /* Quiz container and menu styling */
-.wordle-quiz-container {
+.quiz-container {
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
   max-width: 800px;
   margin: 20px auto;
 }
-.wordle-quiz-menu {
+.quiz-menu {
   margin-bottom: 20px;
 }
 .quiz-menu-button {
@@ -161,75 +130,48 @@ button {
 // Object to store user's choices for each question
 let userChoices = {};
 
-// Function to show the selected question
+// Function to show a specific question and update the menu's active state
 function showQuestion(q) {
-  // Hide all questions
+  // Hide all quiz questions
   const questions = document.querySelectorAll('.quiz-question');
   questions.forEach(function(qEl) {
     qEl.style.display = 'none';
   });
-
-  // Show the selected question
-  const selectedQuestion = document.getElementById('question-' + q);
-  if (selectedQuestion) {
-    selectedQuestion.style.display = 'block';
-    
-    // Refresh iframe content if needed
-    const iframe = selectedQuestion.querySelector('iframe');
-    if (iframe) {
-      // Force reload the iframe
-      const currentSrc = iframe.src;
-      iframe.src = '';
-      setTimeout(function() {
-        iframe.src = currentSrc;
-      }, 50);
-    }
-  }
-
-  // Update button active state
-  const buttons = document.querySelectorAll('.quiz-menu-button');
-  buttons.forEach(function(btn, index) {
+  document.getElementById('question-' + q).style.display = 'block';
+  
+  // Update menu button active state
+  const menuButtons = document.querySelectorAll('.quiz-menu-button');
+  menuButtons.forEach(function(btn) {
     btn.classList.remove('active');
-    if (index === q - 1) btn.classList.add('active');
   });
+  // Activate the current question's button (assumes buttons are in order)
+  document.querySelector('.quiz-menu-button:nth-child(' + q + ')').classList.add('active');
 }
 
-// Function to handle user's choice selection
-function selectChoice(choice, questionNumber, event) {
-  userChoices[questionNumber] = choice;
-  
-  // Reset button styles
-  const parentDiv = event.target.parentNode;
-  const buttons = parentDiv.querySelectorAll('button');
+// Function to register a user's choice for a given question
+function selectChoice(choice, questionNum, event) {
+  userChoices[questionNum] = choice;
+  // Reset opacity for all buttons in this question's button group
+  const parent = event.target.closest('.button-group');
+  const buttons = parent.querySelectorAll('button');
   buttons.forEach(function(btn) {
-    btn.style.opacity = '0.5';
+    btn.style.opacity = '0.6';
   });
-  
-  // Highlight selected button
   event.target.style.opacity = '1';
 }
 
-// Function to confirm choice and show answer
-function confirmChoice(questionNumber) {
-  if (userChoices[questionNumber]) {
-    // Show the answer
-    const answerElement = document.getElementById('answer-' + questionNumber);
-    if (answerElement) {
-      answerElement.style.display = 'block';
-    }
+// Function to confirm a user's choice and show the answer
+function confirmChoice(questionNum) {
+  if (userChoices[questionNum]) {
+    document.getElementById('answer-' + questionNum).style.display = 'block';
   } else {
-    alert("Please select an answer first!");
+    alert("Please select an option first.");
   }
 }
 
-// Show the first question on page load
+// Initialize by showing question 1
 document.addEventListener("DOMContentLoaded", function() {
   showQuestion(1);
-  
-  // Set first button as active
-  const firstButton = document.querySelector('.quiz-menu-button');
-  if (firstButton) {
-    firstButton.classList.add('active');
-  }
 });
 </script>
+  <!-- Your new embedded content section -->
