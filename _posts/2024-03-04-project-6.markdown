@@ -67,7 +67,7 @@ It can be difficult to tell what information is real and what is fake, especiall
 
 </div>
 
-<h4 style="text-align: left;"Wordle</h4>
+<h4 style="text-align: left;">Wordle</h4>
 
 <div style="text-align: left;"> 
 
@@ -102,5 +102,5 @@ Literary expressions that bring curiosity, wonder, and reflection into dialogue 
 ** **
 
 ## 💌 Share our page
-
+** **
 <img src="img/portfolio/CogitOn_QR_Code.png" width="200" />
