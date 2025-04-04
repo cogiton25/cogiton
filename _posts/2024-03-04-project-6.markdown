@@ -9,10 +9,11 @@ project-date: April 2024
 client: 
 category:
 description: 
-
 ---
 
-## 🧠 Who are we
+<div style="text-align: left">
+
+## 🧠 Who 
 
 ![image-alt](team.jpg)
 
@@ -21,7 +22,9 @@ description:
 **Aoran Song**, PhD Candidate, Max Planck School of Cognition (far left)
 **Lydia Wiernik**, Guest Researcher, Max Planck Institute for Human Cognitive and Brain Sciences (second right)
 
-> *CogitOn is led by a team of four researchers at the Max Planck Institute for Human Cognitive and Brain Sciences.*
+> CogitOn is led by a team of four researchers at the Max Planck Institute for Human Cognitive and Brain Sciences.*
+
+---
 
 ## 🛠️ Does
 
@@ -39,6 +42,8 @@ We combine expertise from neuroscience, computer science, linguistics, philosoph
 ### **Sharing resources**
 
 We offer a growing library of scientific prompts, mini-games, and literary spin-offs, designed for the broader scientific community.
+
+---
 
 ## 🎯 What
 
@@ -64,7 +69,12 @@ Pick THE one!
 
 Literary expressions that bring curiosity, wonder, and reflection into dialogue with scientific ideas are values and appreciated.
 
-**Where**
+---
+
+**📍 Where**
 
 **Max Planck Institute for Human Cognitive and Brain Sciences**
+
 Stephanstraße 1a, 04103 Leipzig
+
+</div>
