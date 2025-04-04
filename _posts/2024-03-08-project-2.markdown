@@ -11,168 +11,50 @@ category:
 description: Put your knowledge of neuroscience terms to the test with five interactive Wordle games!
 ---
 
-
-<!-- Optional visual separator between description and quiz -->
-<hr class="quiz-separator">
-
 <div class="quiz-container">
-  <!-- Quiz Menu -->
-  <div class="quiz-menu" style="text-align: center; margin-bottom: 20px;">
-    <button onclick="showQuestion(1)" class="quiz-menu-button">1</button>
-    <button onclick="showQuestion(2)" class="quiz-menu-button">2</button>
-    <button onclick="showQuestion(3)" class="quiz-menu-button">3</button>
-    <button onclick="showQuestion(4)" class="quiz-menu-button">4</button>
-    <button onclick="showQuestion(5)" class="quiz-menu-button">5</button>
-  </div>
-  
-  <!-- insula -->
-  <div class="quiz-question" id="question-1" style="display: none;">
-   <iframe src="https://mywordle.strivemath.com/?word=ebjxwe" width="100%" height="600px" style="border: none;"></iframe>
 
-  </div>
-  
-  <!-- cortical -->
-  <div class="quiz-question" id="question-2" style="display: none;"> 
-    <iframe src="https://mywordle.strivemath.com/?word=yciwtgwz" width="100%" height="600px" style="border: none;"></iframe>
+  <!-- Question 1 - visible by default -->
+  <div class="quiz-question" id="question-1" style="display: block;">
+    <h2>Real or Not Real?</h2>
+    <p>This is a special Wordle-style quiz. Solve it to move on!</p>
+    
+    <div style="width: 100%; max-width: 800px; margin: auto;">
+      <iframe 
+        src="https://mywordle.strivemath.com/?word=ebjxwe" 
+        style="width: 100%; height: 600px; border: none; display: block;">
+      </iframe>
+    </div>
 
-  </div>
-  
-  <!-- basal -->
-  <div class="quiz-question" id="question-3" style="display: none;">
-    <iframe src="https://mywordle.strivemath.com/?word=xojdw" width="100%" height="600px" style="border: none;"></iframe>
-
-  </div>
-  
-  <!-- brain -->
-  <div class="quiz-question" id="question-4" style="display: none;">
-    <iframe src="https://mywordle.strivemath.com/?word=xfrly" width="100%" height="600px" style="border: none;"></iframe>
-
-  </div>
-  
-  <!-- think -->
-  <div class="quiz-question" id="question-5" style="display: none;">
-    <iframe src="https://mywordle.strivemath.com/?word=pvzqv" width="100%" height="600px" style="border: none;"></iframe>
-
+    <button onclick="nextQuestion()">Next</button>
   </div>
 
-<style>
-/* General styles for the quiz interface */
-.statement {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-.button-group {
-  margin-bottom: 20px;
-}
-button {
-  font-size: 16px;
-  padding: 8px 16px;
-  margin: 0 10px;
-  cursor: pointer;
-  border: none;
-  color: white;
-  border-radius: 5px;
-}
-.real-btn { background-color: #4CAF50; }
-.not-real-btn { background-color: #f44336; }
-.confirm-btn { background-color: #008CBA; margin-top: 20px; }
-.answer {
-  font-size: 16px;
-  display: none;
-  margin-top: 20px;
-  padding: 15px;
-  border-radius: 8px;
-  background-color: #e0f7fa;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  <!-- Question 2 - hidden initially -->
+  <div class="quiz-question" id="question-2" style="display: none;">
+    <h2>Another Wordle Quiz</h2>
+    <p>Here’s another one to test your brain.</p>
+    
+    <div style="width: 100%; max-width: 800px; margin: auto;">
+      <iframe 
+        src="https://mywordle.strivemath.com/?word=xojdw" 
+        style="width: 100%; height: 600px; border: none; display: block;">
+      </iframe>
+    </div>
 
-/* Quiz container and menu styling */
-.quiz-container {
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 800px;
-  margin: 20px auto;
-}
-.quiz-menu {
-  margin-bottom: 20px;
-}
-.quiz-menu-button {
-  font-size: 16px;
-  padding: 6px 12px;
-  margin: 0 5px;
-  cursor: pointer;
-  border: 1px solid #008CBA;
-  background-color: #008CBA;
-  color: white;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-.quiz-menu-button:hover {
-  background-color: #006494;
-}
-.quiz-menu-button.active {
-  background-color: #006494;
-}
+    <button onclick="nextQuestion()">Next</button>
+  </div>
 
-/* Optional separator style */
-.quiz-separator {
-  margin: 40px auto;
-  max-width: 800px;
-  border: none;
-  border-top: 2px solid #ddd;
-}
-</style>
+</div>
 
 <script>
-// Object to store user's choices for each question
-let userChoices = {};
+  let currentQuestion = 1;
 
-// Function to show a specific question and update the menu's active state
-function showQuestion(q) {
-  // Hide all quiz questions
-  const questions = document.querySelectorAll('.quiz-question');
-  questions.forEach(function(qEl) {
-    qEl.style.display = 'none';
-  });
-  document.getElementById('question-' + q).style.display = 'block';
-  
-  // Update menu button active state
-  const menuButtons = document.querySelectorAll('.quiz-menu-button');
-  menuButtons.forEach(function(btn) {
-    btn.classList.remove('active');
-  });
-  // Activate the current question's button (assumes buttons are in order)
-  document.querySelector('.quiz-menu-button:nth-child(' + q + ')').classList.add('active');
-}
-
-// Function to register a user's choice for a given question
-function selectChoice(choice, questionNum, event) {
-  userChoices[questionNum] = choice;
-  // Reset opacity for all buttons in this question's button group
-  const parent = event.target.closest('.button-group');
-  const buttons = parent.querySelectorAll('button');
-  buttons.forEach(function(btn) {
-    btn.style.opacity = '0.6';
-  });
-  event.target.style.opacity = '1';
-}
-
-// Function to confirm a user's choice and show the answer
-function confirmChoice(questionNum) {
-  if (userChoices[questionNum]) {
-    document.getElementById('answer-' + questionNum).style.display = 'block';
-  } else {
-    alert("Please select an option first.");
+  function nextQuestion() {
+    document.getElementById(`question-${currentQuestion}`).style.display = 'none';
+    currentQuestion++;
+    const next = document.getElementById(`question-${currentQuestion}`);
+    if (next) {
+      next.style.display = 'block';
+    }
   }
-}
-
-// Initialize by showing question 1
-document.addEventListener("DOMContentLoaded", function() {
-  showQuestion(1);
-});
 </script>
-  <!-- Your new embedded content section -->
 
