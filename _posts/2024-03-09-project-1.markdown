@@ -202,28 +202,8 @@ button {
 }
 .real-btn { background-color: #4CAF50; }
 .not-real-btn { background-color: #f44336; }
-
-/* Updated styles for Confirm and Clear buttons */
-.confirm-btn,
-.clear-btn {
-  background: transparent;
-  border: 2px solid;
-  color: transparent;
-  font-size: 14px;
-  padding: 6px 12px;
-  margin-top: 30px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.confirm-btn {
-  border-color: #FFFFFF;
-  color: #FFFFFF;
-}
-.clear-btn {
-  border-color: #FFFFFF;
-  color: #FFFFFF;
-}
-
+.confirm-btn { background-color: #008CBA; margin-top: 20px; }
+.clear-btn { background-color: #FF9800; margin-top: 20px; }
 .answer {
   font-size: 16px;
   display: none;
