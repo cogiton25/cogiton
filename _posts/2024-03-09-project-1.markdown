@@ -208,7 +208,7 @@ button {
 .clear-btn {
   background: transparent;
   border: 2px solid;
-  color: inherit;
+  color: transparent;
   font-size: 14px;
   padding: 6px 12px;
   margin-top: 30px;
@@ -216,12 +216,12 @@ button {
   cursor: pointer;
 }
 .confirm-btn {
-  border-color: #008CBA;
-  color: #008CBA;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
 }
 .clear-btn {
-  border-color: #FF9800;
-  color: #FF9800;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .answer {
