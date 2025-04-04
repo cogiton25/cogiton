@@ -20,9 +20,21 @@ description:
 
 **Marian Simarro**, PhD Candidate, Max Planck School of Cognition (second left)
 
+</div>
+
+<div style="text-align: left;"> 
+
 **Ananda Bajric**, PhD Candidate, Max Planck School of Cognition (far right)
 
+</div>
+
+<div style="text-align: left;"> 
+
 **Aoran Song**, PhD Candidate, Max Planck School of Cognition (far left)
+
+</div>
+
+<div style="text-align: left;"> 
 
 **Lydia Wiernik**, Guest Researcher, Max Planck Institute for Human Cognitive and Brain Sciences (second right)
 
@@ -32,7 +44,7 @@ description:
 
 ## 🛠️ Does
 
-### **Designing interactive and educational projects**  
+<h3 style="text-align: left;">Designing interactive and educational projects</h3>
 
 <div style="text-align: left;"> 
 
@@ -40,7 +52,7 @@ description:
 
 </div>
 
-### **Combining expertise within the field of cognitive science**
+<h3 style="text-align: left;">Combining expertise within the field of cognitive science</h3>
 
 <div style="text-align: left;"> 
 
@@ -48,8 +60,7 @@ We combine expertise from neuroscience, computer science, linguistics, philosoph
 
 </div>
 
-
-### **Sharing resources**
+<h3 style="text-align: left;">Sharing resources</h3>
 
 <div style="text-align: left;"> 
 
@@ -88,7 +99,6 @@ The connections game invites players to group related neuroscience terms or conc
 
 </div>
 
-
 <h4 style="text-align: left;">*multiple choice*</h4>
 
 <div style="text-align: left;"> 
@@ -104,7 +114,6 @@ Pick THE one!
 Literary expressions that bring curiosity, wonder, and reflection into dialogue with scientific ideas are values and appreciated.
 
 </div>
-
 
 ## 💌 Share our page
 
