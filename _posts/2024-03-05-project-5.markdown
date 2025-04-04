@@ -44,9 +44,6 @@ description: Get creative!
 
 </div>
 
-
-### Submission box
-
 <!-- SUBMISSION BOX -->
 <hr class="quiz-separator">
 
