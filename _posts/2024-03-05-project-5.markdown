@@ -35,6 +35,12 @@ description: Get creative!
 
 </div>
 
+ <!-- Embedded YouTube video -->
+  <div class="aspect-w-16 aspect-h-9 mt-6">
+    <iframe class="w-full h-full" src="https://www.youtube.com/watch?v=xN9PbhDOS1I&ab_channel=CBCArts" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
 <!-- SUBMISSION BOX -->
 <hr class="quiz-separator">
 
