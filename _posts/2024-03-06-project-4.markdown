@@ -160,8 +160,21 @@ button.mc-option.option-d {
   const mcProj = {
     selectedCategory: null,
     mcUserChoices: {},
+    // Correct answers mapping for Category 1
+    correctAnswers: {
+      1: { letter: 'A', text: 'Vascular dementia' },
+      2: { letter: 'C', text: 'Causal link to life events' },
+      3: { letter: 'D', text: 'Conditioned learning' },
+      4: { letter: 'D', text: 'Tremor' },
+      5: { letter: 'C', text: 'Acetylcholine' },
+      6: { letter: 'D', text: '70%' },
+      7: { letter: 'D', text: 'It is more common in men than in women.' },
+      8: { letter: 'A', text: 'A patient has epileptic twitches in their hand and responds promptly and correctly to questions.' },
+      9: { letter: 'C', text: 'Orexin' },
+      10: { letter: 'A', text: 'Thalamus' }
+    },
+    // Full quiz HTML for Category 1 (with 10 questions)
     fullQuizHTML: `
-      <!-- Quiz Menu -->
       <div class="quiz-menu" style="text-align: center; margin-bottom: 20px;">
         <button onclick="mcProj.showQuestion(1)" class="quiz-menu-button">1</button>
         <button onclick="mcProj.showQuestion(2)" class="quiz-menu-button">2</button>
@@ -187,7 +200,7 @@ button.mc-option.option-d {
         <button class="confirm-btn" onclick="mcProj.confirmChoice(1)">Confirm</button>
         <button class="clear-btn" onclick="mcProj.clearChoice(1)">Clear</button>
         <div class="answer" id="mc-answer-1">
-          <strong>Correct Answer:</strong> Option <span id="mc-correct-1">A</span>
+          <strong>Correct Answer:</strong> <span id="mc-correct-1">Vascular dementia</span>
         </div>
       </div>
       
@@ -203,7 +216,7 @@ button.mc-option.option-d {
         <button class="confirm-btn" onclick="mcProj.confirmChoice(2)">Confirm</button>
         <button class="clear-btn" onclick="mcProj.clearChoice(2)">Clear</button>
         <div class="answer" id="mc-answer-2">
-          <strong>Correct Answer:</strong> Option <span id="mc-correct-2">C</span>
+          <strong>Correct Answer:</strong> <span id="mc-correct-2">Causal link to life events</span>
         </div>
       </div>
       
@@ -219,7 +232,7 @@ button.mc-option.option-d {
         <button class="confirm-btn" onclick="mcProj.confirmChoice(3)">Confirm</button>
         <button class="clear-btn" onclick="mcProj.clearChoice(3)">Clear</button>
         <div class="answer" id="mc-answer-3">
-          <strong>Correct Answer:</strong> Option <span id="mc-correct-3">D</span>
+          <strong>Correct Answer:</strong> <span id="mc-correct-3">Conditioned learning</span>
         </div>
       </div>
       
@@ -235,7 +248,7 @@ button.mc-option.option-d {
         <button class="confirm-btn" onclick="mcProj.confirmChoice(4)">Confirm</button>
         <button class="clear-btn" onclick="mcProj.clearChoice(4)">Clear</button>
         <div class="answer" id="mc-answer-4">
-          <strong>Correct Answer:</strong> Option <span id="mc-correct-4">D</span>
+          <strong>Correct Answer:</strong> <span id="mc-correct-4">Tremor</span>
         </div>
       </div>
       
@@ -251,7 +264,7 @@ button.mc-option.option-d {
         <button class="confirm-btn" onclick="mcProj.confirmChoice(5)">Confirm</button>
         <button class="clear-btn" onclick="mcProj.clearChoice(5)">Clear</button>
         <div class="answer" id="mc-answer-5">
-          <strong>Correct Answer:</strong> Option <span id="mc-correct-5">C</span>
+          <strong>Correct Answer:</strong> <span id="mc-correct-5">Acetylcholine</span>
         </div>
       </div>
       
@@ -267,7 +280,7 @@ button.mc-option.option-d {
         <button class="confirm-btn" onclick="mcProj.confirmChoice(6)">Confirm</button>
         <button class="clear-btn" onclick="mcProj.clearChoice(6)">Clear</button>
         <div class="answer" id="mc-answer-6">
-          <strong>Correct Answer:</strong> Option <span id="mc-correct-6">D</span>
+          <strong>Correct Answer:</strong> <span id="mc-correct-6">70%</span>
         </div>
       </div>
       
@@ -283,7 +296,7 @@ button.mc-option.option-d {
         <button class="confirm-btn" onclick="mcProj.confirmChoice(7)">Confirm</button>
         <button class="clear-btn" onclick="mcProj.clearChoice(7)">Clear</button>
         <div class="answer" id="mc-answer-7">
-          <strong>Correct Answer:</strong> Option <span id="mc-correct-7">D</span>
+          <strong>Correct Answer:</strong> <span id="mc-correct-7">It is more common in men than in women.</span>
         </div>
       </div>
       
@@ -299,7 +312,7 @@ button.mc-option.option-d {
         <button class="confirm-btn" onclick="mcProj.confirmChoice(8)">Confirm</button>
         <button class="clear-btn" onclick="mcProj.clearChoice(8)">Clear</button>
         <div class="answer" id="mc-answer-8">
-          <strong>Correct Answer:</strong> Option <span id="mc-correct-8">A</span>
+          <strong>Correct Answer:</strong> <span id="mc-correct-8">A patient has epileptic twitches in their hand and responds promptly and correctly to questions.</span>
         </div>
       </div>
       
@@ -315,7 +328,7 @@ button.mc-option.option-d {
         <button class="confirm-btn" onclick="mcProj.confirmChoice(9)">Confirm</button>
         <button class="clear-btn" onclick="mcProj.clearChoice(9)">Clear</button>
         <div class="answer" id="mc-answer-9">
-          <strong>Correct Answer:</strong> Option <span id="mc-correct-9">C</span>
+          <strong>Correct Answer:</strong> <span id="mc-correct-9">Orexin</span>
         </div>
       </div>
       
@@ -331,7 +344,7 @@ button.mc-option.option-d {
         <button class="confirm-btn" onclick="mcProj.confirmChoice(10)">Confirm</button>
         <button class="clear-btn" onclick="mcProj.clearChoice(10)">Clear</button>
         <div class="answer" id="mc-answer-10">
-          <strong>Correct Answer:</strong> Option <span id="mc-correct-10">A</span>
+          <strong>Correct Answer:</strong> <span id="mc-correct-10">Thalamus</span>
         </div>
       </div>
     `,
@@ -349,7 +362,6 @@ button.mc-option.option-d {
       // If Category 1, show full quiz; otherwise, show placeholder
       if (cat === 1) {
         document.getElementById('mc-quiz-container').innerHTML = this.fullQuizHTML;
-        // Also append the Back button and quiz menu are already in the HTML above.
         document.getElementById('mc-quiz-container').style.display = 'block';
         this.showQuestion(1);
       } else {
@@ -384,17 +396,29 @@ button.mc-option.option-d {
       }
     },
     selectChoice: function(choice, questionNum, event) {
-      this.mcUserChoices[questionNum] = choice;
+      // Store both the selected letter and a reference to the button element
+      this.mcUserChoices[questionNum] = { letter: choice, element: event.target };
       const parent = event.target.closest('.button-group');
       const buttons = parent.querySelectorAll('button');
       buttons.forEach(function(btn) {
+        // Reset opacity and background color to default (as defined in CSS)
         btn.style.opacity = '0.6';
+        btn.style.backgroundColor = '';
       });
       event.target.style.opacity = '1';
     },
     confirmChoice: function(questionNum) {
-      if(this.mcUserChoices[questionNum]) {
+      const userChoice = this.mcUserChoices[questionNum];
+      if(userChoice) {
+        const correct = this.correctAnswers[questionNum];
+        if(userChoice.letter === correct.letter) {
+          userChoice.element.style.backgroundColor = "#A5D6A7"; // light green
+        } else {
+          userChoice.element.style.backgroundColor = "#EF9A9A"; // light red
+        }
+        // Display the answer div with the correct answer text
         document.getElementById('mc-answer-' + questionNum).style.display = 'block';
+        document.getElementById('mc-correct-' + questionNum).innerText = correct.text;
       } else {
         alert("Please select an option first.");
       }
@@ -402,10 +426,11 @@ button.mc-option.option-d {
     clearChoice: function(questionNum) {
       // Clear stored choice for that question
       delete this.mcUserChoices[questionNum];
-      // Reset opacity for that question's buttons
+      // Reset opacity and background color for that question's buttons
       const btns = document.querySelectorAll('#mc-question-' + questionNum + ' .button-group button');
       btns.forEach(function(btn) {
         btn.style.opacity = '1';
+        btn.style.backgroundColor = '';
       });
       // Hide the answer display
       document.getElementById('mc-answer-' + questionNum).style.display = 'none';
