@@ -55,7 +55,7 @@ description: Get creative!
 <hr class="quiz-separator">
 
 <div class="submission-section">
-  <h2 style="text-align:center;">Submit your own poem or story!</h2>
+  <h2 style="text-align:center;">Submit your own poem or story or short film!</h2>
   <p style="text-align:center;">Want to share a piece of writing? Submit a text (no word limit!) and we might add it to the next version!</p>
 
   <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="submission-form">
