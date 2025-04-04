@@ -6,94 +6,118 @@ date: 2024-03-08
 img: wordle_header.png
 alt: image-alt
 project-date: April 2024
-client:  
+client: Start 
 category: 
 description: Put your knowledge of neuroscience terms to the test with five interactive Wordle games!
 ---
 
+
 <!-- Optional visual separator between description and quiz -->
-<hr class="quiz-separator">
+<hr class="wordle-quiz-separator">
 
-<div class="quiz-container">
+<div class="wordle-quiz-container">
   <!-- Quiz Menu -->
-  <div class="quiz-menu" style="text-align: center; margin-bottom: 20px;">
-    <button onclick="showQuestion(1)" class="quiz-menu-button">1</button>
-    <button onclick="showQuestion(2)" class="quiz-menu-button">2</button>
-    <button onclick="showQuestion(3)" class="quiz-menu-button">3</button>
-    <button onclick="showQuestion(4)" class="quiz-menu-button">4</button>
-    <button onclick="showQuestion(5)" class="quiz-menu-button">5</button>
+  <div class="wordle-quiz-menu" style="text-align: center; margin-bottom: 20px;">
+    <button onclick="showQuestion(1)" class="wordle-quiz-menu-button">1</button>
+    <button onclick="showQuestion(2)" class="wordle-quiz-menu-button">2</button>
+    <button onclick="showQuestion(3)" class="wordle-quiz-menu-button">3</button>
+    <button onclick="showQuestion(4)" class="wordle-quiz-menu-button">4</button>
+    <button onclick="showQuestion(5)" class="wordle-quiz-menu-button">5</button>
+  </div>
+  
+  <!-- insula -->
+  <div class="wordle-quiz-question" id="question-1" style="display: none;">
+   <iframe src="https://mywordle.strivemath.com/?word=ebjxwe" width="100%" height="600px" style="border: none;"></iframe>
+
+  </div>
+  
+  <!-- cortical -->
+  <div class="wordle-quiz-question" id="question-2" style="display: none;"> 
+    <iframe src="https://mywordle.strivemath.com/?word=yciwtgwz" width="100%" height="600px" style="border: none;"></iframe>
+
+  </div>
+  
+  <!-- basal -->
+  <div class="wordle-quiz-question" id="question-3" style="display: none;">
+    <iframe src="https://mywordle.strivemath.com/?word=xojdw" width="100%" height="600px" style="border: none;"></iframe>
+
+  </div>
+  
+  <!-- brain -->
+  <div class="wordle-quiz-question" id="question-4" style="display: none;">
+    <iframe src="https://mywordle.strivemath.com/?word=xfrly" width="100%" height="600px" style="border: none;"></iframe>
+
+  </div>
+  
+  <!-- think -->
+  <div class="wordle-quiz-question" id="question-5" style="display: none;">
+    <iframe src="https://mywordle.strivemath.com/?word=pvzqv" width="100%" height="600px" style="border: none;"></iframe>
+
   </div>
 
-  <!-- Question 1 -->
-  <div class="quiz-question" id="question-1" style="display: none;">
-    <div class="wordle-frame-wrapper">
-      <iframe src="https://mywordle.strivemath.com/?word=ebjxwe" allowfullscreen></iframe>
-    </div>
-  </div>
-
-  <!-- Question 2 -->
-  <div class="quiz-question" id="question-2" style="display: none;">
-    <div class="wordle-frame-wrapper">
-      <iframe src="https://mywordle.strivemath.com/?word=yciwtgwz" allowfullscreen></iframe>
-    </div>
-  </div>
-
-  <!-- Question 3 -->
-  <div class="quiz-question" id="question-3" style="display: none;">
-    <div class="wordle-frame-wrapper">
-      <iframe src="https://mywordle.strivemath.com/?word=xojdw" allowfullscreen></iframe>
-    </div>
-  </div>
-
-  <!-- Question 4 -->
-  <div class="quiz-question" id="question-4" style="display: none;">
-    <div class="wordle-frame-wrapper">
-      <iframe src="https://mywordle.strivemath.com/?word=xfrly" allowfullscreen></iframe>
-    </div>
-  </div>
-
-  <!-- Question 5 -->
-  <div class="quiz-question" id="question-5" style="display: none;">
-    <div class="wordle-frame-wrapper">
-      <iframe src="https://mywordle.strivemath.com/?word=pvzqv" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
-
-<!-- STYLES -->
 <style>
+/* General styles for the quiz interface */
+.statement {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.button-group {
+  margin-bottom: 20px;
+}
+button {
+  font-size: 16px;
+  padding: 8px 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.real-btn { background-color: #4CAF50; }
+.not-real-btn { background-color: #f44336; }
+.confirm-btn { background-color: #008CBA; margin-top: 20px; }
+.answer {
+  font-size: 16px;
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #e0f7fa;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Quiz container and menu styling */
 .quiz-container {
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
-  max-width: 900px;
+  max-width: 800px;
   margin: 20px auto;
+}
+.quiz-menu {
+  margin-bottom: 20px;
 }
 .quiz-menu-button {
   font-size: 16px;
-  padding: 8px 12px;
-  margin: 5px;
+  padding: 6px 12px;
+  margin: 0 5px;
   cursor: pointer;
-  border: none;
+  border: 1px solid #008CBA;
   background-color: #008CBA;
   color: white;
   border-radius: 4px;
+  transition: background-color 0.3s;
 }
-.quiz-menu-button.active,
 .quiz-menu-button:hover {
-  background-color: #005f8c;
+  background-color: #006494;
 }
-.wordle-frame-wrapper {
-  width: 100%;
-  height: 600px;
-  margin: 0 auto;
+.quiz-menu-button.active {
+  background-color: #006494;
 }
-.wordle-frame-wrapper iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-}
+
+/* Optional separator style */
 .quiz-separator {
   margin: 40px auto;
   max-width: 800px;
@@ -102,26 +126,52 @@ description: Put your knowledge of neuroscience terms to the test with five inte
 }
 </style>
 
-<!-- SCRIPTS -->
 <script>
+// Object to store user's choices for each question
+let userChoices = {};
+
+// Function to show a specific question and update the menu's active state
+function showQuestion(q) {
+  // Hide all quiz questions
+  const questions = document.querySelectorAll('.quiz-question');
+  questions.forEach(function(qEl) {
+    qEl.style.display = 'none';
+  });
+  document.getElementById('question-' + q).style.display = 'block';
+  
+  // Update menu button active state
+  const menuButtons = document.querySelectorAll('.quiz-menu-button');
+  menuButtons.forEach(function(btn) {
+    btn.classList.remove('active');
+  });
+  // Activate the current question's button (assumes buttons are in order)
+  document.querySelector('.quiz-menu-button:nth-child(' + q + ')').classList.add('active');
+}
+
+// Function to register a user's choice for a given question
+function selectChoice(choice, questionNum, event) {
+  userChoices[questionNum] = choice;
+  // Reset opacity for all buttons in this question's button group
+  const parent = event.target.closest('.button-group');
+  const buttons = parent.querySelectorAll('button');
+  buttons.forEach(function(btn) {
+    btn.style.opacity = '0.6';
+  });
+  event.target.style.opacity = '1';
+}
+
+// Function to confirm a user's choice and show the answer
+function confirmChoice(questionNum) {
+  if (userChoices[questionNum]) {
+    document.getElementById('answer-' + questionNum).style.display = 'block';
+  } else {
+    alert("Please select an option first.");
+  }
+}
+
+// Initialize by showing question 1
 document.addEventListener("DOMContentLoaded", function() {
   showQuestion(1);
 });
-
-function showQuestion(q) {
-  document.querySelectorAll('.quiz-question').forEach(qEl => {
-    qEl.style.display = 'none';
-  });
-  const target = document.getElementById('question-' + q);
-  if (target) {
-    target.style.display = 'block';
-  }
-
-  document.querySelectorAll('.quiz-menu-button').forEach((btn, index) => {
-    btn.classList.remove('active');
-    if (index === q - 1) {
-      btn.classList.add('active');
-    }
-  });
-}
 </script>
+  <!-- Your new embedded content section -->
