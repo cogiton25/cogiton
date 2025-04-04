@@ -9,7 +9,7 @@ Welcome to **CogitOn**, a playful and educational platform designed by cognitive
 
 ## 🚀 Overview
 
-CogitOn is a growing collection of short, gamified modules that engage users in exploring scientific content, evaluating scientific intuitions, and enjoying science-themed stories and poems. The platform blends fun and rigor, making cognitive science approachable and engaging.
+CogitOn is a growing collection of short, gamified modules that engage users in exploring scientific content, evaluating scientific intuitions, and enjoying science-themed stories and poems. The platform blends fun and rigor, making cognitive science approachable and accessible to all.
 
 ---
 
@@ -40,7 +40,7 @@ CogitOn is developed by researchers at the **Max Planck Institute for Human Cogn
 
 - Interdisciplinary science content (cognitive sciences, artificial intelligence, linguistics, psychology, philosophy)
 - Interactive mini-games and challenges
-- Literary and artistic content
+- Literary and artistic contents
 - Open and accessible to scientists, students, and curious minds alike
 
 ---
