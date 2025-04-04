@@ -12,7 +12,7 @@ description:
 
 ---
 
-## 🧠 Who
+## 🧠 Who are we
 
 ![image-alt](team.jpg)
 
