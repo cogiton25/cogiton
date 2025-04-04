@@ -28,17 +28,25 @@ description:
 
 ## 🛠️ Does
 
+### **Designing interactive and educational projects**  
+
 <div style="text-align: left;"> 
 
-### **Designing interactive and educational projects**  
- 
-We develop short and engaging gamified modules that invite members of the scientific community to actively interact with content. These modules are designed to spark curiosity, encourage self-assessment of scientific intuitions, and feature science-inspired short stories and poems.
+ We develop short and engaging gamified modules that invite members of the scientific community to actively interact with content. These modules are designed to spark curiosity, encourage self-assessment of scientific intuitions, and feature science-inspired short stories and poems.
+
+</div>
 
 ### **Combining expertise within the field of cognitive science**
 
+<div style="text-align: left;"> 
+
 We combine expertise from neuroscience, computer science, linguistics, philosophy, and psychology to create modules that are both fun and informative. This interdisciplinary foundation enables the platform to offer a diverse range of activities for the broader scientific community.
 
+</div>
+
 ### **Sharing resources**
+
+<div style="text-align: left;"> 
 
 We offer a growing library of scientific prompts, mini-games, and literary spin-offs, designed for the broader scientific community.
 
@@ -50,23 +58,43 @@ We offer a growing library of scientific prompts, mini-games, and literary spin-
 
 <h4 style="text-align: left;">*real or not real?*</h4>
 
+<div style="text-align: left;"> 
+
 It can be difficult to tell what information is real and what is fake, especially with the rise of AI-generated news and science content and clickbait marketing tactics. We present a few examples for you to read and decide whether the information is real or not real, underlining the importance of reading thoroughly about a topic before believing the first thing you hear!
+
+</div>
 
 <h4 style="text-align: left;">*wordle*</h4>
 
+<div style="text-align: left;"> 
+
 Our wordles feature basic neuroscience terminologies, offering a light and fun game for all :D
+
+</div>
 
 <h4 style="text-align: left;">connections*</h4>
 
+<div style="text-align: left;"> 
+
 The connections game invites players to group related neuroscience terms or concepts, ranging from brain regions named after scientists to color-based idioms for emotions. 
+
+</div>
 
 <h4 style="text-align: left;">*multiple choice*</h4>
 
+<div style="text-align: left;"> 
+
 Pick THE one!
+
+</div>
 
 <h4 style="text-align: left;">*stories and poems*</h4>
 
+<div style="text-align: left;"> 
+
 Literary expressions that bring curiosity, wonder, and reflection into dialogue with scientific ideas are values and appreciated.
+
+</div>
 
 ## Share our page
 
