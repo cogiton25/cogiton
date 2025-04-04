@@ -1,57 +1,189 @@
 ---
 layout: default
-title: "Multiple Choice"
-modal-id: 4
-date: 2024-03-07
-img: multiple_choice_header.png
+title: "Real or Not Real"
+modal-id: 1
+date: 2024-03-09
+img: real_notreal_header.png
 alt: image-alt
 project-date: April 2025
-client:
-category:
-description:
+client: 
+category: 
+description: >-
+  It can be difficult to tell what information is real and what is fake, especially with the rise of AI-generated news and science content and clickbait marketing tactics. We present a few examples for you to read and decide whether the information is real or not real, underlining the importance of reading thoroughly about a topic before believing the first thing you hear!
 ---
 
+<!-- Optional visual separator between description and quiz -->
 <hr class="quiz-separator">
+<h3 style="text-align: center;">Quiz</h3>
 
-<div id="mc-project-4">
-  <!-- Category Selection (initially visible) -->
-  <div id="mc-category-selection" style="text-align: center; margin-bottom: 30px;">
-    <h2>Select a Category</h2>
-    <button class="mc-category-button" onclick="mcProj.selectCategory(1)" style="background-color: #2E7D32;">Clinical Neuro &amp; Psych</button>
-    <button class="mc-category-button" onclick="mcProj.selectCategory(2)" style="background-color: #388E3C;">Cognitive Sciences</button>
-    <button class="mc-category-button" onclick="mcProj.selectCategory(3)" style="background-color: #43A047;">Artificial Intelligence</button>
-    <button class="mc-category-button" onclick="mcProj.selectCategory(4)" style="background-color: #4CAF50;">Philosophy</button>
+<div class="quiz-container">
+  <!-- Quiz Menu -->
+  <div class="quiz-menu" style="text-align: center; margin-bottom: 20px;">
+    <button onclick="showQuestion(1)" class="quiz-menu-button">1</button>
+    <button onclick="showQuestion(2)" class="quiz-menu-button">2</button>
+    <button onclick="showQuestion(3)" class="quiz-menu-button">3</button>
+    <button onclick="showQuestion(4)" class="quiz-menu-button">4</button>
+    <button onclick="showQuestion(5)" class="quiz-menu-button">5</button>
+    <button onclick="showQuestion(6)" class="quiz-menu-button">6</button>
+    <button onclick="showQuestion(7)" class="quiz-menu-button">7</button>
+    <button onclick="showQuestion(8)" class="quiz-menu-button">8</button>
+    <button onclick="showQuestion(9)" class="quiz-menu-button">9</button>
+    <button onclick="showQuestion(10)" class="quiz-menu-button">10</button>
   </div>
-
-  <!-- Quiz Container (initially hidden) -->
-  <div id="mc-quiz-container" style="display: none;"></div>
+  
+  <!-- Question 1 -->
+  <div class="quiz-question" id="question-1">
+    <div class="statement">Rectal distensions are a common way to study visceral pain.</div>
+    <div class="button-group">
+      <button class="real-btn" onclick="selectChoice('Real', 1, event)">Real</button>
+      <button class="not-real-btn" onclick="selectChoice('Not Real', 1, event)">Not real</button>
+    </div>
+    <button class="confirm-btn" onclick="confirmChoice(1)">Confirm</button>
+    <button class="clear-btn" onclick="clearChoice(1)">Clear</button>
+    <div class="answer" id="answer-1">
+      <strong>Real.</strong> The study explored whether a brief relaxation exercise could influence placebo or nocebo effects in visceral pain induced by rectal balloon distension. Participants received neutral saline infusions after either performing relaxation exercises or no relaxation, combined with positive, negative, or neutral treatment suggestions. Results showed that relaxation enhanced placebo responses (reduced visceral pain from positive suggestions) but did not significantly alter nocebo responses. This indicates that relaxation exercises could boost positive psychological influences specifically in managing visceral pain. 
+      <br>(<a href="https://doi.org/10.3389/fpsyt.2019.00144" target="_blank">DOI: 10.3389/fpsyt.2019.00144</a>)
+    </div>
+  </div>
+  
+  <!-- Question 2 -->
+  <div class="quiz-question" id="question-2" style="display: none;">
+    <div class="statement">Adults “look like” their names, but children do not.</div>
+    <div class="button-group">
+      <button class="real-btn" onclick="selectChoice('Real', 2, event)">Real</button>
+      <button class="not-real-btn" onclick="selectChoice('Not Real', 2, event)">Not real</button>
+    </div>
+    <button class="confirm-btn" onclick="confirmChoice(2)">Confirm</button>
+    <button class="clear-btn" onclick="clearChoice(2)">Clear</button>
+    <div class="answer" id="answer-2">
+      <strong>Real.</strong> One study published in 2024 used a variety of methodological approaches—including a machine-learning paradigm comparing images of people with the same given name, a face-to-name matching task, and a simulation wherein children’s faces were digitally aged to adulthood—to determine that the face–name matching effect is age-dependent. In other words, people “look like” their names not because they were named based on their appearance at birth, but due to a self-fulfilling prophecy mechanism where facial appearance develops over time in line with the expectations of the given name.
+      <br>(<a href="https://doi.org/10.1073/pnas.2405334121" target="_blank">DOI: 10.1073/pnas.2405334121</a>)
+    </div>
+  </div>
+  
+  <!-- Question 3 -->
+  <div class="quiz-question" id="question-3" style="display: none;">
+    <div class="statement">Tickling can affect decision-making in rats.</div>
+    <div class="button-group">
+      <button class="real-btn" onclick="selectChoice('Real', 3, event)">Real</button>
+      <button class="not-real-btn" onclick="selectChoice('Not Real', 3, event)">Not real</button>
+    </div>
+    <button class="confirm-btn" onclick="confirmChoice(3)">Confirm</button>
+    <button class="clear-btn" onclick="clearChoice(3)">Clear</button>
+    <div class="answer" id="answer-3">
+      <strong>Real.</strong> “Laughing Rats Are Optimistic” – Tickling rats induces positive emotions, as evidenced by their 50-kHz ultrasonic vocalizations (i.e., “laughter”), which biases their decision-making toward optimism when interpreting ambiguous cues.
+      <br>(<a href="https://doi.org/10.1371/journal.pone.0051959" target="_blank">DOI: 10.1371/journal.pone.0051959</a>)
+    </div>
+  </div>
+  
+  <!-- Question 4 -->
+  <div class="quiz-question" id="question-4" style="display: none;">
+    <div class="statement">People with schizophrenia are more unpredictable and violent than the general population.</div>
+    <div class="button-group">
+      <button class="real-btn" onclick="selectChoice('Real', 4, event)">Real</button>
+      <button class="not-real-btn" onclick="selectChoice('Not Real', 4, event)">Not real</button>
+    </div>
+    <button class="confirm-btn" onclick="confirmChoice(4)">Confirm</button>
+    <button class="clear-btn" onclick="clearChoice(4)">Clear</button>
+    <div class="answer" id="answer-4">
+      <strong>Not Real.</strong> Although some epidemiological reviews have reported higher rates of violence among individuals with schizophrenia compared to the general population, much of this violence is attributable to a small subgroup with co-occurring substance abuse and a prior history of violence.
+      <br>(<a href="https://doi.org/10.1371/journal.pmed.1000120" target="_blank">DOI: 10.1371/journal.pmed.1000120</a> ; <a href="https://doi.org/10.1016/S0920-9964(03)00091-4" target="_blank">DOI: 10.1016/S0920-9964(03)00091-4</a>)
+    </div>
+  </div>
+  
+  <!-- Question 5 -->
+  <div class="quiz-question" id="question-5" style="display: none;">
+    <div class="statement">Music can be reconstructed from human auditory cortex fMRI activity using nonlinear decoding models.</div>
+    <div class="button-group">
+      <button class="real-btn" onclick="selectChoice('Real', 5, event)">Real</button>
+      <button class="not-real-btn" onclick="selectChoice('Not Real', 5, event)">Not real</button>
+    </div>
+    <button class="confirm-btn" onclick="confirmChoice(5)">Confirm</button>
+    <button class="clear-btn" onclick="clearChoice(5)">Clear</button>
+    <div class="answer" id="answer-5">
+      <strong>Not Real.</strong> The study titled “Music can be reconstructed from human auditory cortex activity using nonlinear decoding models” investigated how the human brain processes music by analyzing intracranial EEG data from 29 patients who listened to a Pink Floyd song. Researchers used a stimulus reconstruction approach, previously applied in speech studies, to reconstruct a recognizable song from direct neural recordings, thereby providing insights into the neural dynamics of music perception.
+      <br>(<a href="https://doi.org/10.1371/journal.pbio.3002176" target="_blank">DOI: 10.1371/journal.pbio.3002176</a>)
+    </div>
+  </div>
+  
+  <!-- Question 6 -->
+  <div class="quiz-question" id="question-6" style="display: none;">
+    <div class="statement">Schizophrenia and personality disorders are associated with a similar reduction in life expectancy.</div>
+    <div class="button-group">
+      <button class="real-btn" onclick="selectChoice('Real', 6, event)">Real</button>
+      <button class="not-real-btn" onclick="selectChoice('Not Real', 6, event)">Not real</button>
+    </div>
+    <button class="confirm-btn" onclick="confirmChoice(6)">Confirm</button>
+    <button class="clear-btn" onclick="clearChoice(6)">Clear</button>
+    <div class="answer" id="answer-6">
+      <strong>Real.</strong> The systematic review and meta-analysis by Chan and colleagues (2023) provides robust evidence that schizophrenia and personality disorders are linked to a comparable reduction in life expectancy. The analysis reports a pooled life expectancy of 63.70 years and a Years of Potential Life Lost (YPLL) of 15.22 years for individuals with schizophrenia. Similarly, those with personality disorders have a life expectancy of 63.51 years and a YPLL of 15.35 years. These results highlight that both conditions exert similar impacts on lifespan.  
+      <br>(<a href="https://doi.org/10.1016/j.eclinm.2023.102294" target="_blank">DOI: 10.1016/j.eclinm.2023.102294</a>)
+    </div>
+  </div>
+  
+  <!-- Question 7  -->
+  <div class="quiz-question" id="question-7" style="display: none;">
+    <div class="statement">Scientists have successfully connected two brains to enable direct brain-to-brain communication.</div>
+    <div class="button-group">
+      <button class="real-btn" onclick="selectChoice('Real', 7, event)">Real</button>
+      <button class="not-real-btn" onclick="selectChoice('Not Real', 7, event)">Not real</button>
+    </div>
+    <button class="confirm-btn" onclick="confirmChoice(7)">Confirm</button>
+    <button class="clear-btn" onclick="clearChoice(7)">Clear</button>
+    <div class="answer" id="answer-7">
+      <strong>Real.</strong> In a series of experiments, researchers demonstrated direct brain-to-brain communication using non-invasive techniques like EEG and transcranial magnetic stimulation. In one study, participants were able to send simple messages such as “yes” or “no” directly from one brain to another without speaking or typing.
+      <br>(<a href="https://doi.org/10.1371/journal.pone.0105225" target="_blank">DOI: 10.1371/journal.pone.0105225</a>)
+    </div>
+  </div>
+  
+  <!-- Question 8 -->
+  <div class="quiz-question" id="question-8" style="display: none;">
+    <div class="statement">Substance-Use-Disorders exhibit to ~20 years of potential life lost..</div>
+    <div class="button-group">
+      <button class="real-btn" onclick="selectChoice('Real', 8, event)">Real</button>
+      <button class="not-real-btn" onclick="selectChoice('Not Real', 8, event)">Not real</button>
+    </div>
+    <button class="confirm-btn" onclick="confirmChoice(8)">Confirm</button>
+    <button class="clear-btn" onclick="clearChoice(8)">Clear</button>
+    <div class="answer" id="answer-8">
+      <strong>Real.</strong> The systematic review and meta-analysis by Chan and colleagues (2023) shows substance-use-disorders are associated with the years of potential life (YPLL) with an average of approximately 20.38 years lost relative to the general population. 
+      <br>(<a href="https://doi.org/10.1073/pnas.2405334121" target="_blank">DOI: 10.1371/journal.pbio.3002176.</a>)
+    </div>
+  </div>  
+  
+  <!-- Question 9 -->
+  <div class="quiz-question" id="question-9" style="display: none;">
+    <div class="statement">Plants can "hear" the sound of water and grow their roots toward it.</div>
+    <div class="button-group">
+      <button class="real-btn" onclick="selectChoice('Real', 9, event)">Real</button>
+      <button class="not-real-btn" onclick="selectChoice('Not Real', 9, event)">Not real</button>
+    </div>
+    <button class="confirm-btn" onclick="confirmChoice(9)">Confirm</button>
+    <button class="clear-btn" onclick="clearChoice(9)">Clear</button>
+    <div class="answer" id="answer-9">
+      <strong>Real.</strong> A study from the University of Western Australia found that plant roots can detect and grow toward the sound of running water, even without any moisture being present. This indicates plants may use acoustic cues to locate water sources in dry environments.
+      <br>(<a href="https://doi.org/10.1111/nph.14346" target="_blank">DOI: 10.1111/nph.14346</a>)
+    </div>
+  </div>
+  
+  <!-- Question 10  -->
+  <div class="quiz-question" id="question-10" style="display: none;">
+    <div class="statement">Octopuses throw objects at each other, possibly out of spite.</div>
+    <div class="button-group">
+      <button class="real-btn" onclick="selectChoice('Real', 10, event)">Real</button>
+      <button class="not-real-btn" onclick="selectChoice('Not Real', 10, event)">Not real</button>
+    </div>
+    <button class="confirm-btn" onclick="confirmChoice(10)">Confirm</button>
+    <button class="clear-btn" onclick="clearChoice(10)">Clear</button>
+    <div class="answer" id="answer-10">
+      <strong>Real.</strong> Researchers observing wild octopuses recorded them gathering shells or silt and propelling it through the water using a jet of water from their siphon. Some throws appeared targeted at other octopuses, especially during social or mating interactions, suggesting possible social behavior—or even spite.
+      <br>(<a href="https://doi.org/10.1002/jez.2611" target="_blank">DOI: 10.1002/jez.2611</a>)
+    </div>
+  </div>
 </div>
 
 <style>
-/* Scoped styles for the Multiple Choice project */
-#mc-project-4 {
-  /* Container-specific styles if needed */
-}
-
-/* Category Selection & Back Button */
-.mc-category-button {
-  font-size: 20px;
-  padding: 12px 20px;
-  margin: 10px;
-  cursor: pointer;
-  border: 2px solid #000;
-  color: white;
-  border-radius: 8px;
-  transition: opacity 0.3s;
-}
-.mc-category-button:hover {
-  opacity: 0.8;
-}
-.mc-category-button.active {
-  border: 4px solid #000;
-}
-
-/* General quiz interface styles */
+/* General styles for the quiz interface */
 .statement {
   font-size: 20px;
   margin-bottom: 20px;
@@ -59,51 +191,19 @@ description:
 .button-group {
   margin-bottom: 20px;
 }
-button.mc-option {
-  display: block;
+button {
   font-size: 16px;
   padding: 8px 16px;
-  margin: 8px auto;
+  margin: 0 10px;
   cursor: pointer;
   border: none;
-  color: #333;
-  border-radius: 5px;
-  width: 100%;
-  max-width: 300px;
-}
-/* Different pastel colors for each option */
-button.mc-option.option-a {
-  background-color: #C5E1A5; /* Pastel green */
-}
-button.mc-option.option-b {
-  background-color: #90CAF9; /* Pastel blue */
-}
-button.mc-option.option-c {
-  background-color: #FFCC80; /* Pastel orange */
-}
-button.mc-option.option-d {
-  background-color: #CE93D8; /* Pastel purple */
-}
-.confirm-btn {
-  background-color: #008CBA;
-  margin-top: 20px;
-  font-size: 16px;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 5px;
   color: white;
-  cursor: pointer;
-}
-.clear-btn {
-  background-color: #E64A19;
-  margin-top: 10px;
-  font-size: 16px;
-  padding: 8px 16px;
-  border: none;
   border-radius: 5px;
-  color: white;
-  cursor: pointer;
 }
+.real-btn { background-color: #4CAF50; }
+.not-real-btn { background-color: #f44336; }
+.confirm-btn { background-color: #008CBA; margin-top: 20px; }
+.clear-btn { background-color: #FF9800; margin-top: 20px; }
 .answer {
   font-size: 16px;
   display: none;
@@ -155,287 +255,64 @@ button.mc-option.option-d {
 </style>
 
 <script>
-(function(){
-  // Namespace for our Multiple Choice project
-  const mcProj = {
-    selectedCategory: null,
-    mcUserChoices: {},
-    // Correct answers mapping for Category 1
-    correctAnswers: {
-      1: { letter: 'A', text: 'Vascular dementia' },
-      2: { letter: 'C', text: 'Causal link to life events' },
-      3: { letter: 'D', text: 'Conditioned learning' },
-      4: { letter: 'D', text: 'Tremor' },
-      5: { letter: 'C', text: 'Acetylcholine' },
-      6: { letter: 'D', text: '70%' },
-      7: { letter: 'D', text: 'It is more common in men than in women.' },
-      8: { letter: 'A', text: 'A patient has epileptic twitches in their hand and responds promptly and correctly to questions.' },
-      9: { letter: 'C', text: 'Orexin' },
-      10: { letter: 'A', text: 'Thalamus' }
-    },
-    // Full quiz HTML for Category 1 (with 10 questions)
-    fullQuizHTML: 
-      <div class="quiz-menu" style="text-align: center; margin-bottom: 20px;">
-        <button onclick="mcProj.showQuestion(1)" class="quiz-menu-button">1</button>
-        <button onclick="mcProj.showQuestion(2)" class="quiz-menu-button">2</button>
-        <button onclick="mcProj.showQuestion(3)" class="quiz-menu-button">3</button>
-        <button onclick="mcProj.showQuestion(4)" class="quiz-menu-button">4</button>
-        <button onclick="mcProj.showQuestion(5)" class="quiz-menu-button">5</button>
-        <button onclick="mcProj.showQuestion(6)" class="quiz-menu-button">6</button>
-        <button onclick="mcProj.showQuestion(7)" class="quiz-menu-button">7</button>
-        <button onclick="mcProj.showQuestion(8)" class="quiz-menu-button">8</button>
-        <button onclick="mcProj.showQuestion(9)" class="quiz-menu-button">9</button>
-        <button onclick="mcProj.showQuestion(10)" class="quiz-menu-button">10</button>
-      </div>
-      
-      <!-- Question 1 -->
-      <div class="quiz-question" id="mc-question-1">
-        <div class="statement">Which is the second most common form of dementia?</div>
-        <div class="button-group">
-          <button class="mc-option option-a" onclick="mcProj.selectChoice('A', 1, event)">Vascular dementia</button>
-          <button class="mc-option option-b" onclick="mcProj.selectChoice('B', 1, event)">Dementia with Lewy bodies</button>
-          <button class="mc-option option-c" onclick="mcProj.selectChoice('C', 1, event)">Primary progressive aphasia</button>
-          <button class="mc-option option-d" onclick="mcProj.selectChoice('D', 1, event)">Pick disease</button>
-        </div>
-        <button class="confirm-btn" onclick="mcProj.confirmChoice(1)">Confirm</button>
-        <button class="clear-btn" onclick="mcProj.clearChoice(1)">Clear</button>
-        <div class="answer" id="mc-answer-1">
-          <strong>Correct Answer:</strong> <span id="mc-correct-1">Vascular dementia</span>
-        </div>
-      </div>
-      
-      <!-- Question 2 -->
-      <div class="quiz-question" id="mc-question-2" style="display: none;">
-        <div class="statement">What is the main difference between "major depression" and "adjustment disorder"?</div>
-        <div class="button-group">
-          <button class="mc-option option-a" onclick="mcProj.selectChoice('A', 2, event)">Severity of symptoms</button>
-          <button class="mc-option option-b" onclick="mcProj.selectChoice('B', 2, event)">Duration of episode</button>
-          <button class="mc-option option-c" onclick="mcProj.selectChoice('C', 2, event)">Causal link to life events</button>
-          <button class="mc-option option-d" onclick="mcProj.selectChoice('D', 2, event)">Therapeutic approach</button>
-        </div>
-        <button class="confirm-btn" onclick="mcProj.confirmChoice(2)">Confirm</button>
-        <button class="clear-btn" onclick="mcProj.clearChoice(2)">Clear</button>
-        <div class="answer" id="mc-answer-2">
-          <strong>Correct Answer:</strong> <span id="mc-correct-2">Causal link to life events</span>
-        </div>
-      </div>
-      
-      <!-- Question 3 -->
-      <div class="quiz-question" id="mc-question-3" style="display: none;">
-        <div class="statement">Which form of memory/learning is particularly reliant on Papez circuit?</div>
-        <div class="button-group">
-          <button class="mc-option option-a" onclick="mcProj.selectChoice('A', 3, event)">Priming</button>
-          <button class="mc-option option-b" onclick="mcProj.selectChoice('B', 3, event)">Semantic memory</button>
-          <button class="mc-option option-c" onclick="mcProj.selectChoice('C', 3, event)">Procedural memory</button>
-          <button class="mc-option option-d" onclick="mcProj.selectChoice('D', 3, event)">Conditioned learning</button>
-        </div>
-        <button class="confirm-btn" onclick="mcProj.confirmChoice(3)">Confirm</button>
-        <button class="clear-btn" onclick="mcProj.clearChoice(3)">Clear</button>
-        <div class="answer" id="mc-answer-3">
-          <strong>Correct Answer:</strong> <span id="mc-correct-3">Conditioned learning</span>
-        </div>
-      </div>
-      
-      <!-- Question 4 -->
-      <div class="quiz-question" id="mc-question-4" style="display: none;">
-        <div class="statement">Which symptom in the Parkinson spectrum is most accessible to deep brain stimulation?</div>
-        <div class="button-group">
-          <button class="mc-option option-a" onclick="mcProj.selectChoice('A', 4, event)">Muscular rigidity</button>
-          <button class="mc-option option-b" onclick="mcProj.selectChoice('B', 4, event)">Hyposmia</button>
-          <button class="mc-option option-c" onclick="mcProj.selectChoice('C', 4, event)">Camptocormia</button>
-          <button class="mc-option option-d" onclick="mcProj.selectChoice('D', 4, event)">Tremor</button>
-        </div>
-        <button class="confirm-btn" onclick="mcProj.confirmChoice(4)">Confirm</button>
-        <button class="clear-btn" onclick="mcProj.clearChoice(4)">Clear</button>
-        <div class="answer" id="mc-answer-4">
-          <strong>Correct Answer:</strong> <span id="mc-correct-4">Tremor</span>
-        </div>
-      </div>
-      
-      <!-- Question 5 -->
-      <div class="quiz-question" id="mc-question-5" style="display: none;">
-        <div class="statement">The presently most effective anti-dementive drugs target which transmitter system?</div>
-        <div class="button-group">
-          <button class="mc-option option-a" onclick="mcProj.selectChoice('A', 5, event)">Glutamate</button>
-          <button class="mc-option option-b" onclick="mcProj.selectChoice('B', 5, event)">GABA</button>
-          <button class="mc-option option-c" onclick="mcProj.selectChoice('C', 5, event)">Acetylcholine</button>
-          <button class="mc-option option-d" onclick="mcProj.selectChoice('D', 5, event)">Serotonin</button>
-        </div>
-        <button class="confirm-btn" onclick="mcProj.confirmChoice(5)">Confirm</button>
-        <button class="clear-btn" onclick="mcProj.clearChoice(5)">Clear</button>
-        <div class="answer" id="mc-answer-5">
-          <strong>Correct Answer:</strong> <span id="mc-correct-5">Acetylcholine</span>
-        </div>
-      </div>
-      
-      <!-- Question 6 -->
-      <div class="quiz-question" id="mc-question-6" style="display: none;">
-        <div class="statement">What percentage of all cases of dementia are attributable to Alzheimer alone?</div>
-        <div class="button-group">
-          <button class="mc-option option-a" onclick="mcProj.selectChoice('A', 6, event)">20%</button>
-          <button class="mc-option option-b" onclick="mcProj.selectChoice('B', 6, event)">35%</button>
-          <button class="mc-option option-c" onclick="mcProj.selectChoice('C', 6, event)">60%</button>
-          <button class="mc-option option-d" onclick="mcProj.selectChoice('D', 6, event)">70%</button>
-        </div>
-        <button class="confirm-btn" onclick="mcProj.confirmChoice(6)">Confirm</button>
-        <button class="clear-btn" onclick="mcProj.clearChoice(6)">Clear</button>
-        <div class="answer" id="mc-answer-6">
-          <strong>Correct Answer:</strong> <span id="mc-correct-6">70%</span>
-        </div>
-      </div>
-      
-      <!-- Question 7 -->
-      <div class="quiz-question" id="mc-question-7" style="display: none;">
-        <div class="statement">Which statement about Multiple sclerosis is incorrect?</div>
-        <div class="button-group">
-          <button class="mc-option option-a" onclick="mcProj.selectChoice('A', 7, event)">The relapsing-remitting form is by far more common than the primary progressive form.</button>
-          <button class="mc-option option-b" onclick="mcProj.selectChoice('B', 7, event)">Patients are usually 20 to 40 years old at onset.</button>
-          <button class="mc-option option-c" onclick="mcProj.selectChoice('C', 7, event)">Optic neuritis is the most common symptom that prompts diagnosis.</button>
-          <button class="mc-option option-d" onclick="mcProj.selectChoice('D', 7, event)">It is more common in men than in women.</button>
-        </div>
-        <button class="confirm-btn" onclick="mcProj.confirmChoice(7)">Confirm</button>
-        <button class="clear-btn" onclick="mcProj.clearChoice(7)">Clear</button>
-        <div class="answer" id="mc-answer-7">
-          <strong>Correct Answer:</strong> <span id="mc-correct-7">It is more common in men than in women.</span>
-        </div>
-      </div>
-      
-      <!-- Question 8 -->
-      <div class="quiz-question" id="mc-question-8" style="display: none;">
-        <div class="statement">Which description corresponds to a "simple focal" seizure?</div>
-        <div class="button-group">
-          <button class="mc-option option-a" onclick="mcProj.selectChoice('A', 8, event)">A patient has epileptic twitches in their hand and responds promptly and correctly to questions.</button>
-          <button class="mc-option option-b" onclick="mcProj.selectChoice('B', 8, event)">A patient has epileptic twitches in their hand and responds somewhat sluggishly, yet overall correctly, to questions.</button>
-          <button class="mc-option option-c" onclick="mcProj.selectChoice('C', 8, event)">A patient has a brief absence seizure (&lt;10 s) and responds promptly and correctly immediately afterwards.</button>
-          <button class="mc-option option-d" onclick="mcProj.selectChoice('D', 8, event)">A patient has fallen to the ground, suffers convulsions, and doesn't respond to stimulation.</button>
-        </div>
-        <button class="confirm-btn" onclick="mcProj.confirmChoice(8)">Confirm</button>
-        <button class="clear-btn" onclick="mcProj.clearChoice(8)">Clear</button>
-        <div class="answer" id="mc-answer-8">
-          <strong>Correct Answer:</strong> <span id="mc-correct-8">A patient has epileptic twitches in their hand and responds promptly and correctly to questions.</span>
-        </div>
-      </div>
-      
-      <!-- Question 9 -->
-      <div class="quiz-question" id="mc-question-9" style="display: none;">
-        <div class="statement">Narcolepsy is associated with the loss of which neurotransmitter function?</div>
-        <div class="button-group">
-          <button class="mc-option option-a" onclick="mcProj.selectChoice('A', 9, event)">Noradrenalin</button>
-          <button class="mc-option option-b" onclick="mcProj.selectChoice('B', 9, event)">Norepinephrine</button>
-          <button class="mc-option option-c" onclick="mcProj.selectChoice('C', 9, event)">Orexin</button>
-          <button class="mc-option option-d" onclick="mcProj.selectChoice('D', 9, event)">Histamine</button>
-        </div>
-        <button class="confirm-btn" onclick="mcProj.confirmChoice(9)">Confirm</button>
-        <button class="clear-btn" onclick="mcProj.clearChoice(9)">Clear</button>
-        <div class="answer" id="mc-answer-9">
-          <strong>Correct Answer:</strong> <span id="mc-correct-9">Orexin</span>
-        </div>
-      </div>
-      
-      <!-- Question 10 -->
-      <div class="quiz-question" id="mc-question-10" style="display: none;">
-        <div class="statement">Where do you not find elements of the reticular formation?</div>
-        <div class="button-group">
-          <button class="mc-option option-a" onclick="mcProj.selectChoice('A', 10, event)">Thalamus</button>
-          <button class="mc-option option-b" onclick="mcProj.selectChoice('B', 10, event)">Midbrain</button>
-          <button class="mc-option option-c" onclick="mcProj.selectChoice('C', 10, event)">Pons</button>
-          <button class="mc-option option-d" onclick="mcProj.selectChoice('D', 10, event)">Medulla</button>
-        </div>
-        <button class="confirm-btn" onclick="mcProj.confirmChoice(10)">Confirm</button>
-        <button class="clear-btn" onclick="mcProj.clearChoice(10)">Clear</button>
-        <div class="answer" id="mc-answer-10">
-          <strong>Correct Answer:</strong> <span id="mc-correct-10">Thalamus</span>
-        </div>
-      </div>
-    ,
-    placeholderHTML: 
-      <div style="text-align: center; font-size: 20px; margin-top: 30px;">
-        Quiz for this category coming soon.
-        <br><br>
-        <button class="mc-category-button" onclick="mcProj.goBackToCategories()" style="background-color: #2E7D32;">Back to Categories</button>
-      </div>
-    ,
-    selectCategory: function(cat) {
-      this.selectedCategory = cat;
-      // Hide category selection
-      document.getElementById('mc-category-selection').style.display = 'none';
-      // If Category 1, show full quiz; otherwise, show placeholder
-      if (cat === 1) {
-        document.getElementById('mc-quiz-container').innerHTML = this.fullQuizHTML;
-        document.getElementById('mc-quiz-container').style.display = 'block';
-        this.showQuestion(1);
-      } else {
-        document.getElementById('mc-quiz-container').innerHTML = this.placeholderHTML;
-        document.getElementById('mc-quiz-container').style.display = 'block';
-      }
-    },
-    goBackToCategories: function() {
-      // Clear selections if needed
-      this.selectedCategory = null;
-      document.getElementById('mc-quiz-container').style.display = 'none';
-      document.getElementById('mc-category-selection').style.display = 'block';
-    },
-    showQuestion: function(q) {
-      // Hide all questions within the quiz container
-      const questions = document.querySelectorAll('#mc-quiz-container .quiz-question');
-      questions.forEach(function(qEl) {
-        qEl.style.display = 'none';
-      });
-      // Display the selected question
-      const selected = document.getElementById('mc-question-' + q);
-      if(selected) {
-        selected.style.display = 'block';
-      }
-      // Update active state for quiz menu buttons
-      const menuButtons = document.querySelectorAll('#mc-quiz-container .quiz-menu-button');
-      menuButtons.forEach(function(btn){
-        btn.classList.remove('active');
-      });
-      if(menuButtons[q-1]) {
-        menuButtons[q-1].classList.add('active');
-      }
-    },
-    selectChoice: function(choice, questionNum, event) {
-      // Store both the selected letter and a reference to the button element
-      this.mcUserChoices[questionNum] = { letter: choice, element: event.target };
-      const parent = event.target.closest('.button-group');
-      const buttons = parent.querySelectorAll('button');
-      buttons.forEach(function(btn) {
-        // Reset opacity and background color to default (as defined in CSS)
-        btn.style.opacity = '0.6';
-        btn.style.backgroundColor = '';
-      });
-      event.target.style.opacity = '1';
-    },
-    confirmChoice: function(questionNum) {
-      const userChoice = this.mcUserChoices[questionNum];
-      if(userChoice) {
-        const correct = this.correctAnswers[questionNum];
-        if(userChoice.letter === correct.letter) {
-          userChoice.element.style.backgroundColor = "#A5D6A7"; // light green
-        } else {
-          userChoice.element.style.backgroundColor = "#EF9A9A"; // light red
-        }
-        // Display the answer div with the correct answer text
-        document.getElementById('mc-answer-' + questionNum).style.display = 'block';
-        document.getElementById('mc-correct-' + questionNum).innerText = correct.text;
-      } else {
-        alert("Please select an option first.");
-      }
-    },
-    clearChoice: function(questionNum) {
-      // Clear stored choice for that question
-      delete this.mcUserChoices[questionNum];
-      // Reset opacity and background color for that question's buttons
-      const btns = document.querySelectorAll('#mc-question-' + questionNum + ' .button-group button');
-      btns.forEach(function(btn) {
-        btn.style.opacity = '1';
-        btn.style.backgroundColor = '';
-      });
-      // Hide the answer display
-      document.getElementById('mc-answer-' + questionNum).style.display = 'none';
-    }
-  };
-  window.mcProj = mcProj;
-})();
+// Object to store user's choices for each question
+let userChoices = {};
+
+// Function to show a specific question and update the menu's active state
+function showQuestion(q) {
+  // Hide all quiz questions
+  const questions = document.querySelectorAll('.quiz-question');
+  questions.forEach(function(qEl) {
+    qEl.style.display = 'none';
+  });
+  document.getElementById('question-' + q).style.display = 'block';
+  
+  // Update menu button active state
+  const menuButtons = document.querySelectorAll('.quiz-menu-button');
+  menuButtons.forEach(function(btn) {
+    btn.classList.remove('active');
+  });
+  // Activate the current question's button (assumes buttons are in order)
+  document.querySelector('.quiz-menu-button:nth-child(' + q + ')').classList.add('active');
+}
+
+// Function to register a user's choice for a given question
+function selectChoice(choice, questionNum, event) {
+  userChoices[questionNum] = choice;
+  // Reset opacity for all buttons in this question's button group
+  const parent = event.target.closest('.button-group');
+  const buttons = parent.querySelectorAll('button');
+  buttons.forEach(function(btn) {
+    btn.style.opacity = '0.6';
+  });
+  event.target.style.opacity = '1';
+}
+
+// Function to confirm a user's choice and show the answer
+function confirmChoice(questionNum) {
+  if (userChoices[questionNum]) {
+    document.getElementById('answer-' + questionNum).style.display = 'block';
+  } else {
+    alert("Please select an option first.");
+  }
+}
+
+// Function to clear a user's choice and hide the answer, allowing a change
+function clearChoice(questionNum) {
+  // Remove the user's selection
+  delete userChoices[questionNum];
+  // Hide the answer if displayed
+  document.getElementById('answer-' + questionNum).style.display = 'none';
+  // Reset opacity for all buttons in the question's button group
+  const parent = document.getElementById('question-' + questionNum).querySelector('.button-group');
+  const buttons = parent.querySelectorAll('button');
+  buttons.forEach(function(btn) {
+    btn.style.opacity = '1';
+  });
+}
+
+// Initialize by showing question 1
+document.addEventListener("DOMContentLoaded", function() {
+  showQuestion(1);
+});
 </script>
