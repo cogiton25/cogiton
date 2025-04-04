@@ -12,9 +12,7 @@ description:
 
 ---
 
-<div style="text-align: left">
-
-## 🧠 Who
+<h2 style="text-align: left;">🧠 Who are we</h2> 
 
 <img src="img/portfolio/team.jpg" width="600" />
 
@@ -28,7 +26,7 @@ description:
 
 *> CogitOn is led by a team of four researchers at the Max Planck Institute for Human Cognitive and Brain Sciences.*
 
-## 🛠️ Does
+<h2 style="text-align: left;">🛠️ Does</h2>
 
 ### **Designing interactive and educational projects**  
 
@@ -42,7 +40,7 @@ We combine expertise from neuroscience, computer science, linguistics, philosoph
 
 We offer a growing library of scientific prompts, mini-games, and literary spin-offs, designed for the broader scientific community.
 
-## 🎯 What
+<h2 style="text-align: left;">🎯 What</h2>
 
 ### **Five modules**
 
@@ -66,10 +64,8 @@ Pick THE one!
 
 Literary expressions that bring curiosity, wonder, and reflection into dialogue with scientific ideas are values and appreciated.
 
-## 📍 Where
+<h2 style="text-align: left;">📍 Where</h2>
 
 **Max Planck Institute for Human Cognitive and Brain Sciences**
 
 Stephanstraße 1a, 04103 Leipzig
-
-</div>
