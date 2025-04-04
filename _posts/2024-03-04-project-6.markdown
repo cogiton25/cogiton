@@ -12,7 +12,7 @@ description:
 
 ---
 
-## Who
+## 🧠 Who
 
 ![image-alt](team.jpg)
 
@@ -21,47 +21,50 @@ description:
 **Aoran Song**, PhD Candidate, Max Planck School of Cognition (far left)
 **Lydia Wiernik**, Guest Researcher, Max Planck Institute for Human Cognitive and Brain Sciences (second right)
 
-CogitOn is led by a team of four researchers at the Max Planck Institute for Human Cognitive and Brain Sciences.
+> *CogitOn is led by a team of four researchers at the Max Planck Institute for Human Cognitive and Brain Sciences.*
 
-## Does
+## 🛠️ Does
 
-**Designing interactive and educational projects**  
+### **Designing interactive and educational projects**  
 
-We develop short and engaging gamified modules that invite members of the scientific community to actively interact with content. These modules are designed to spark curiosity, encourage self-assessment of scientific intuitions, and feature science-inspired short stories and poems.
+We develop short and engaging gamified modules that invite members of the scientific community to actively interact with content. These modules are designed to:
+- Spark curiosity
+- Encourage self-assessment of scientific intuitions
+- Feature science-inspired short stories and poems
 
-**Combining expertise within the field of cognitive science**
+### **Combining expertise within the field of cognitive science**
 
 We combine expertise from neuroscience, computer science, linguistics, philosophy, and psychology to create modules that are both fun and informative. This interdisciplinary foundation enables the platform to offer a diverse range of activities for the broader scientific community.
 
-**Sharing resources**
+### **Sharing resources**
 
 We offer a growing library of scientific prompts, mini-games, and literary spin-offs, designed for the broader scientific community.
 
-## What
+## 🎯 What
 
-**Five modules**
+### **Five modules**
 
-*real or not real?*
+#### *real or not real?*
 
 It can be difficult to tell what information is real and what is fake, especially with the rise of AI-generated news and science content and clickbait marketing tactics. We present a few examples for you to read and decide whether the information is real or not real, underlining the importance of reading thoroughly about a topic before believing the first thing you hear!
 
-*wordle*
+#### *wordle*
 
 Our wordles feature basic neuroscience terminologies, offering a light and fun game for all :D
 
-*connections*
+#### *connections*
 
 The connections game invites players to group related neuroscience terms or concepts, ranging from brain regions named after scientists to color-based idioms for emotions. 
 
-*multiple choice*
+#### *multiple choice*
 
 Pick THE one!
 
-*stories and poems*
+#### *stories and poems*
 
 Literary expressions that bring curiosity, wonder, and reflection into dialogue with scientific ideas are values and appreciated.
 
 **Where**
 
-Max Planck Institute for Human Cognitive and Brain Sciences
+**Max Planck Institute for Human Cognitive and Brain Sciences**
 Stephanstraße 1a, 04103 Leipzig
