@@ -72,4 +72,4 @@ Stephanstraße 1a, 04103 Leipzig
 
 **Share our page**
 
-<img src="img/portfolio/CogitOn_QR Code.jpg" width="600" />
+<img src="img/portfolio/CogitOn_QR_Code.jpg" width="600" />
