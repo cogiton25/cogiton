@@ -61,8 +61,7 @@ We offer a growing library of scientific prompts, mini-games, and literary spin-
 
 ## 🎯 What
 ** **
-
-<h4 style="text-align: left;">Real or Not Real?</h4>
+<h3 style="text-align: left;">Real or Not Real?</h3>
 
 <div style="text-align: left;"> 
 
@@ -70,7 +69,7 @@ It can be difficult to tell what information is real and what is fake, especiall
 
 </div>
 
-<h4 style="text-align: left;">Wordle</h4>
+<h3 style="text-align: left;">Wordle</h3>
 
 <div style="text-align: left;"> 
 
@@ -78,7 +77,7 @@ Our wordles feature basic neuroscience terminologies, offering a light and fun g
 
 </div>
 
-<h4 style="text-align: left;">Connections</h4>
+<h3 style="text-align: left;">Connections</h3>
 
 <div style="text-align: left;"> 
 
@@ -86,7 +85,7 @@ The connections game invites players to group related neuroscience terms or conc
 
 </div>
 
-<h4 style="text-align: left;">Multiple Choice</h4>
+<h3 style="text-align: left;">Multiple Choice</h3>
 
 <div style="text-align: left;"> 
 
@@ -94,7 +93,7 @@ Pick THE one!
 
 </div>
 
-<h4 style="text-align: left;">Stories and Poems</h4>
+<h3 style="text-align: left;">Stories and Poems</h3>
 
 <div style="text-align: left;"> 
 
@@ -102,6 +101,13 @@ Literary expressions that bring curiosity, wonder, and reflection into dialogue 
 
 </div>
 
+<h4 style="text-align: left;">Purpose Disclaimer</h4>
+
+<div style="text-align: left;"> 
+
+This platform is designed for use at conferences, retreats, or simply for your own enjoyment.
+ 
+</div>
 ** **
 
 ## 💌 Share our page
