@@ -17,10 +17,10 @@ description:
   <!-- Category Selection (initially visible) -->
   <div id="mc-category-selection" style="text-align: center; margin-bottom: 30px;">
     <h2>Select a Category</h2>
-    <button class="mc-category-button" onclick="mcProj.selectCategory(1)" style="background-color: #2E7D32;">Category 1</button>
-    <button class="mc-category-button" onclick="mcProj.selectCategory(2)" style="background-color: #388E3C;">Category 2</button>
-    <button class="mc-category-button" onclick="mcProj.selectCategory(3)" style="background-color: #43A047;">Category 3</button>
-    <button class="mc-category-button" onclick="mcProj.selectCategory(4)" style="background-color: #4CAF50;">Category 4</button>
+    <button class="mc-category-button" onclick="mcProj.selectCategory(1)" style="background-color: #2E7D32;">Clinical Neuro & Psych</button>
+    <button class="mc-category-button" onclick="mcProj.selectCategory(2)" style="background-color: #388E3C;">Cognitive Sciences</button>
+    <button class="mc-category-button" onclick="mcProj.selectCategory(3)" style="background-color: #43A047;">Artificial Intelligence</button>
+    <button class="mc-category-button" onclick="mcProj.selectCategory(4)" style="background-color: #4CAF50;">Philosophy</button>
   </div>
 
   <!-- Quiz Container (initially hidden) -->
