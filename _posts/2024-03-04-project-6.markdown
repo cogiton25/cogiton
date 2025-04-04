@@ -13,6 +13,7 @@ description:
 ---
 
 ## 🧠 Who
+** **
 
 <img src="img/portfolio/team.jpg" width="600" />
 
@@ -30,6 +31,7 @@ description:
 ** **
 
 ## 🛠️ Does
+** **
 
 <h3 style="text-align: left;">Designing interactive and educational projects</h3>
 
@@ -58,6 +60,7 @@ We offer a growing library of scientific prompts, mini-games, and literary spin-
 ** **
 
 ## 🎯 What
+** **
 
 <h4 style="text-align: left;">Real or Not Real?</h4>
 
