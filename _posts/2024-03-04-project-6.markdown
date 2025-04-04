@@ -101,15 +101,20 @@ Literary expressions that bring curiosity, wonder, and reflection into dialogue 
 
 </div>
 
+** **
+
+## 💌 Share our page
+** **
+
+<img src="img/portfolio/CogitOn_QR_Code.png" width="200" />
+
+** **
+
 <h4 style="text-align: left;">Purpose Disclaimer</h4>
+** **
 
 <div style="text-align: left;"> 
 
 This platform is designed for use at conferences, retreats, or simply for your own enjoyment.
  
 </div>
-** **
-
-## 💌 Share our page
-** **
-<img src="img/portfolio/CogitOn_QR_Code.png" width="200" />
