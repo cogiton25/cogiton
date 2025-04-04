@@ -37,18 +37,10 @@ footer:
   social: Around the Web
   credits: Credits
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Social networks usernames (many more available: twitter, google-plus, facebook, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url:
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: 
-  - title: bitbucket
-    url: 
   - title: github
-    url: http://github.com/neuroquiz
+    url: http://github.com/cogiton25
 
 # Postal address (add as many lines as necessary)
 address:
@@ -56,7 +48,7 @@ address:
   - line: Stephanstraße 1a, 04103 Leipzig
 
 # Credits content
-credits: 'CogitOn is a free to use, open source created by Marian Simarro, Ananda bajric, Aoran Song, Lydia Wiernik'
+credits: 'CogitOn is a free to use, open source created by Marian Simarro, Ananda Bajric, Aoran Song, Lydia Wiernik'
 
 # Build settings
 markdown: kramdown
