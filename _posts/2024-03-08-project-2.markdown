@@ -15,9 +15,9 @@ description: Put your knowledge of neuroscience terms to the test with five inte
 <hr class="quiz-separator">
 
 
-<div class="quiz-container">
+<div class="wordle-quiz-container">
   <!-- Quiz Menu -->
-  <div class="quiz-menu" style="text-align: center; margin-bottom: 20px;">
+  <div class="wordle-quiz-menu" style="text-align: center; margin-bottom: 20px;">
     <button onclick="showQuestion(1)" class="quiz-menu-button">1</button>
     <button onclick="showQuestion(2)" class="quiz-menu-button">2</button>
     <button onclick="showQuestion(3)" class="quiz-menu-button">3</button>
@@ -29,10 +29,10 @@ description: Put your knowledge of neuroscience terms to the test with five inte
    <div class="wordle-quiz-question" id="question-1" style="display: none;">
   <iframe src="https://theasylm.github.io/wordlelator/?p=~(w~%27ODE1b3x8YnJhaW4*3d~g~6)" title="Wordle Puzzle 1" width="100%" height="600px" style="border: none;"></iframe>
 </div>
-  </div>
+
   
   <!-- Question 2 -->
-  <div class="quiz-question" id="question-2" style="display: none;">
+  <div class="wordle-quiz-question" id="question-2" style="display: none;">
     <div class="statement">Adults “look like” their names, but children do not.</div>
     <div class="button-group">
       <button class="real-btn" onclick="selectChoice('Real', 2, event)">Real</button>
