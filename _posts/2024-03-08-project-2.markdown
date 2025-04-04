@@ -27,7 +27,7 @@ description: Put your knowledge of neuroscience terms to the test with five inte
   
   <!-- Question 1 -->
    <div class="wordle-quiz-question" id="question-1" style="display: none;">
-  <iframe src="https://theasylm.github.io/wordlelator/?p=~(w~%27ODE1b3x8YnJhaW4*3d~g~6)" title="Wordle Puzzle 1" width="100%" height="600px" style="border: none;"></iframe>
+  <iframe src="https://stephan-poppe.shinyapps.io/shiny-wordle/" title="Wordle Puzzle 1" width="100%" height="600px" style="border: none;"></iframe>
 </div>
 
   
