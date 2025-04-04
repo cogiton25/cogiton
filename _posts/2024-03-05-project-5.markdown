@@ -14,7 +14,7 @@ description: Get creative!
 <div class="max-w-3xl mx-auto p-6">
 
   <div class="text-center">
-    <img src="/assets/images/stories_poems_header.png" alt="image-alt" class="mx-auto rounded-2xl shadow-lg mb-6">
+    <img src="img/portfolio/stories_poems_header" width="600" />
     <h1 class="text-4xl font-bold mb-2">Stories & Poems</h1>
     <p class="text-lg text-gray-600 italic">Get creative!</p>
     <p class="text-sm text-gray-500 mt-1">Submitted on: <strong>March 5, 2024</strong></p>
