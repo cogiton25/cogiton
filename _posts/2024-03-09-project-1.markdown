@@ -202,8 +202,28 @@ button {
 }
 .real-btn { background-color: #4CAF50; }
 .not-real-btn { background-color: #f44336; }
-.confirm-btn { background-color: #008CBA; margin-top: 20px; }
-.clear-btn { background-color: #FF9800; margin-top: 20px; }
+
+/* Updated styles for Confirm and Clear buttons */
+.confirm-btn,
+.clear-btn {
+  background: transparent;
+  border: 2px solid;
+  color: inherit;
+  font-size: 14px;
+  padding: 6px 12px;
+  margin-top: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.confirm-btn {
+  border-color: #008CBA;
+  color: #008CBA;
+}
+.clear-btn {
+  border-color: #FF9800;
+  color: #FF9800;
+}
+
 .answer {
   font-size: 16px;
   display: none;
@@ -316,5 +336,3 @@ document.addEventListener("DOMContentLoaded", function() {
   showQuestion(1);
 });
 </script>
-
-
