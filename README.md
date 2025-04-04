@@ -47,7 +47,7 @@ CogitOn is developed by researchers at the **Max Planck Institute for Human Cogn
 
 ## 🛠️ Getting Started
 
-Visit `[http://localhost:3000](https://cogiton25.github.io/cogiton/)` to explore CogitOn quizes.
+Visit `[http://localhost:3000](https://cogiton25.github.io/cogiton/)` to explore CogitOn quizzes.
 
 ---
 
