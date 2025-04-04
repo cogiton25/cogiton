@@ -164,7 +164,7 @@ button.mc-option.option-d {
     correctAnswers: {
       1: { letter: 'A', text: 'Vascular dementia' },
       2: { letter: 'C', text: 'Causal link to life events' },
-      3: { letter: 'D', text: 'Semantic memory' },
+      3: { letter: 'B', text: 'Semantic memory' },
       4: { letter: 'D', text: 'Tremor' },
       5: { letter: 'C', text: 'Acetylcholine' },
       6: { letter: 'D', text: '70%' },
