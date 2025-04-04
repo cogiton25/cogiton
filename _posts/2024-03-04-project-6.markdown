@@ -120,5 +120,5 @@ Literary expressions that bring curiosity, wonder, and reflection into dialogue 
 
 ## 💌 Share our page
 
-![Image](img/portfolio/CogitOn_QR_Code.png)
+<img src="img/portfolio/CogitOn_QR_Code.png" width="200" />
 
