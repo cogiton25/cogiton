@@ -9,18 +9,6 @@ project-date: April 2014
 client:
 category:
 description: Get creative!
----
-layout: default
-title: "Stories & Poems"
-modal-id: 5
-date: 2024-03-05
-img: stories_poems_header.png
-alt: image-alt
-project-date: April 2014
-client:
-category:
-description: Get creative!
----
 
 <div class="max-w-3xl mx-auto p-6">
 
