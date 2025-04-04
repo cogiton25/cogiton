@@ -232,7 +232,7 @@ button.mc-option.option-d {
         <button class="confirm-btn" onclick="mcProj.confirmChoice(3)">Confirm</button>
         <button class="clear-btn" onclick="mcProj.clearChoice(3)">Clear</button>
         <div class="answer" id="mc-answer-3">
-          <strong>Correct Answer:</strong> <span id="mc-correct-3">Conditioned learning</span>
+          <strong>Correct Answer:</strong> <span id="mc-correct-3">Semantic memory</span>
         </div>
       </div>
       
