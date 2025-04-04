@@ -40,8 +40,6 @@ description:
 
 </div>
 
-<br>
-
 ### **Combining expertise within the field of cognitive science**
 
 <div style="text-align: left;"> 
@@ -50,7 +48,6 @@ We combine expertise from neuroscience, computer science, linguistics, philosoph
 
 </div>
 
-<br>
 
 ### **Sharing resources**
 
@@ -60,13 +57,10 @@ We offer a growing library of scientific prompts, mini-games, and literary spin-
 
 </div>
 
-<br>
 
 ## 🎯 What
 
 <h3 style="text-align: left;">Five modules</h3>
-
-<br>
 
 <h4 style="text-align: left;">*real or not real?*</h4>
 
@@ -76,7 +70,6 @@ It can be difficult to tell what information is real and what is fake, especiall
 
 </div>
 
-<br>
 
 <h4 style="text-align: left;">*wordle*</h4>
 
@@ -86,7 +79,6 @@ Our wordles feature basic neuroscience terminologies, offering a light and fun g
 
 </div>
 
-<br>
 
 <h4 style="text-align: left;">connections*</h4>
 
@@ -96,7 +88,6 @@ The connections game invites players to group related neuroscience terms or conc
 
 </div>
 
-<br>
 
 <h4 style="text-align: left;">*multiple choice*</h4>
 
@@ -106,8 +97,6 @@ Pick THE one!
 
 </div>
 
-<br>
-
 <h4 style="text-align: left;">*stories and poems*</h4>
 
 <div style="text-align: left;"> 
@@ -116,9 +105,7 @@ Literary expressions that bring curiosity, wonder, and reflection into dialogue 
 
 </div>
 
-<br>
 
 ## 💌 Share our page
 
 <img src="img/portfolio/CogitOn_QR_Code.png" width="200" />
-
