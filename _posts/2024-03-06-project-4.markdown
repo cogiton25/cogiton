@@ -84,28 +84,26 @@ button.mc-option.option-c {
 button.mc-option.option-d {
   background-color: #CE93D8; /* Pastel purple */
 }
-
-/* Updated styles for Confirm and Clear buttons */
-.confirm-btn,
-.clear-btn {
-  background: transparent;
-  border: 2px solid;
-  color: inherit;
-  font-size: 14px;
-  padding: 6px 12px;
-  margin-top: 30px;
-  border-radius: 4px;
+.confirm-btn {
+  background-color: #008CBA;
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
   cursor: pointer;
 }
-.confirm-btn {
-  border-color: #008CBA;
-  color: #008CBA;
-}
 .clear-btn {
-  border-color: #FF9800;
-  color: #FF9800;
+  background-color: #E64A19;
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }
-
 .answer {
   font-size: 16px;
   display: none;
@@ -176,7 +174,7 @@ button.mc-option.option-d {
       10: { letter: 'A', text: 'Thalamus' }
     },
     // Full quiz HTML for Category 1 (with 10 questions)
-    fullQuizHTML: `
+    fullQuizHTML: 
       <div class="quiz-menu" style="text-align: center; margin-bottom: 20px;">
         <button onclick="mcProj.showQuestion(1)" class="quiz-menu-button">1</button>
         <button onclick="mcProj.showQuestion(2)" class="quiz-menu-button">2</button>
@@ -349,14 +347,14 @@ button.mc-option.option-d {
           <strong>Correct Answer:</strong> <span id="mc-correct-10">Thalamus</span>
         </div>
       </div>
-    `,
-    placeholderHTML: `
+    ,
+    placeholderHTML: 
       <div style="text-align: center; font-size: 20px; margin-top: 30px;">
         Quiz for this category coming soon.
         <br><br>
         <button class="mc-category-button" onclick="mcProj.goBackToCategories()" style="background-color: #2E7D32;">Back to Categories</button>
       </div>
-    `,
+    ,
     selectCategory: function(cat) {
       this.selectedCategory = cat;
       // Hide category selection
