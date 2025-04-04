@@ -6,55 +6,125 @@ date: 2024-03-08
 img: wordle_header.png
 alt: image-alt
 project-date: April 2024
-client: Start 
+client:  
 category: 
 description: Put your knowledge of neuroscience terms to the test with five interactive Wordle games!
 ---
 
+<!-- Optional visual separator between description and quiz -->
+<hr class="quiz-separator">
+
 <div class="quiz-container">
-
-  <!-- Question 1 - visible by default -->
-  <div class="quiz-question" id="question-1" style="display: block;">
-    <h2>Real or Not Real?</h2>
-    <p>This is a special Wordle-style quiz. Solve it to move on!</p>
-    
-    <div style="width: 100%; max-width: 800px; margin: auto;">
-      <iframe 
-        src="https://mywordle.strivemath.com/?word=ebjxwe" 
-        style="width: 100%; height: 600px; border: none; display: block;">
-      </iframe>
-    </div>
-
-    <button onclick="nextQuestion()">Next</button>
+  <!-- Quiz Menu -->
+  <div class="quiz-menu" style="text-align: center; margin-bottom: 20px;">
+    <button onclick="showQuestion(1)" class="quiz-menu-button">1</button>
+    <button onclick="showQuestion(2)" class="quiz-menu-button">2</button>
+    <button onclick="showQuestion(3)" class="quiz-menu-button">3</button>
+    <button onclick="showQuestion(4)" class="quiz-menu-button">4</button>
+    <button onclick="showQuestion(5)" class="quiz-menu-button">5</button>
   </div>
 
-  <!-- Question 2 - hidden initially -->
+  <!-- Question 1 -->
+  <div class="quiz-question" id="question-1" style="display: none;">
+    <div class="iframe-wrapper">
+      <iframe src="https://mywordle.strivemath.com/?word=ebjxwe" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Question 2 -->
   <div class="quiz-question" id="question-2" style="display: none;">
-    <h2>Another Wordle Quiz</h2>
-    <p>Here’s another one to test your brain.</p>
-    
-    <div style="width: 100%; max-width: 800px; margin: auto;">
-      <iframe 
-        src="https://mywordle.strivemath.com/?word=xojdw" 
-        style="width: 100%; height: 600px; border: none; display: block;">
-      </iframe>
+    <div class="iframe-wrapper">
+      <iframe src="https://mywordle.strivemath.com/?word=yciwtgwz" allowfullscreen></iframe>
     </div>
-
-    <button onclick="nextQuestion()">Next</button>
   </div>
 
+  <!-- Question 3 -->
+  <div class="quiz-question" id="question-3" style="display: none;">
+    <div class="iframe-wrapper">
+      <iframe src="https://mywordle.strivemath.com/?word=xojdw" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Question 4 -->
+  <div class="quiz-question" id="question-4" style="display: none;">
+    <div class="iframe-wrapper">
+      <iframe src="https://mywordle.strivemath.com/?word=xfrly" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Question 5 -->
+  <div class="quiz-question" id="question-5" style="display: none;">
+    <div class="iframe-wrapper">
+      <iframe src="https://mywordle.strivemath.com/?word=pvzqv" allowfullscreen></iframe>
+    </div>
+  </div>
 </div>
 
-<script>
-  let currentQuestion = 1;
+<!-- STYLES -->
+<style>
+.quiz-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+.quiz-menu-button {
+  font-size: 16px;
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #008CBA;
+  color: white;
+  border-radius: 4px;
+}
+.quiz-menu-button.active,
+.quiz-menu-button:hover {
+  background-color: #005f8c;
+}
+.iframe-wrapper {
+  width: 100%;
+  max-width: 100%;
+  height: 600px;
+  margin: 0 auto;
+}
+.iframe-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+.quiz-separator {
+  margin: 40px auto;
+  max-width: 800px;
+  border: none;
+  border-top: 2px solid #ddd;
+}
+</style>
 
-  function nextQuestion() {
-    document.getElementById(`question-${currentQuestion}`).style.display = 'none';
-    currentQuestion++;
-    const next = document.getElementById(`question-${currentQuestion}`);
-    if (next) {
-      next.style.display = 'block';
-    }
+<!-- SCRIPTS -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  showQuestion(1);
+});
+
+function showQuestion(q) {
+  document.querySelectorAll('.quiz-question').forEach(qEl => {
+    qEl.style.display = 'none';
+  });
+  const target = document.getElementById('question-' + q);
+  if (target) {
+    target.style.display = 'block';
   }
+
+  document.querySelectorAll('.quiz-menu-button').forEach((btn, index) => {
+    btn.classList.remove('active');
+    if (index === q - 1) {
+      btn.classList.add('active');
+    }
+  });
+}
 </script>
+
 
