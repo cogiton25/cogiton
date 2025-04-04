@@ -9,6 +9,7 @@ project-date: April 2014
 client:
 category:
 description: Get creative!
+---
 
 <div class="max-w-3xl mx-auto p-6">
 
