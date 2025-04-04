@@ -70,5 +70,5 @@ Literary expressions that bring curiosity, wonder, and reflection into dialogue 
 
 ## Share our page
 
-![Image](https://github.com/cogiton25/cogiton/tree/main/img/portfolio/CogitOn_QR_Code.jpg)
+![Image](https://github.com/cogiton25/cogiton/img/portfolio/CogitOn_QR_Code.jpg)
 
