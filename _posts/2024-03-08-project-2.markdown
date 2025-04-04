@@ -231,48 +231,34 @@ button {
 <script>
 // Object to store user's choices for each question
 let userChoices = {};
-
-// Function to show a specific question and update the menu's active state
+// Function to show the selected Wordle question
 function showQuestion(q) {
-  // Hide all quiz questions
+  // Hide all questions
   const questions = document.querySelectorAll('.quiz-question');
   questions.forEach(function(qEl) {
     qEl.style.display = 'none';
   });
-  document.getElementById('question-' + q).style.display = 'block';
-  
-  // Update menu button active state
-  const menuButtons = document.querySelectorAll('.quiz-menu-button');
-  menuButtons.forEach(function(btn) {
-    btn.classList.remove('active');
-  });
-  // Activate the current question's button (assumes buttons are in order)
-  document.querySelector('.quiz-menu-button:nth-child(' + q + ')').classList.add('active');
-}
 
-// Function to register a user's choice for a given question
-function selectChoice(choice, questionNum, event) {
-  userChoices[questionNum] = choice;
-  // Reset opacity for all buttons in this question's button group
-  const parent = event.target.closest('.button-group');
-  const buttons = parent.querySelectorAll('button');
-  buttons.forEach(function(btn) {
-    btn.style.opacity = '0.6';
-  });
-  event.target.style.opacity = '1';
-}
+  // Show the selected question
+  const selectedQuestion = document.getElementById('question-' + q);
+  selectedQuestion.style.display = 'block';
 
-// Function to confirm a user's choice and show the answer
-function confirmChoice(questionNum) {
-  if (userChoices[questionNum]) {
-    document.getElementById('answer-' + questionNum).style.display = 'block';
-  } else {
-    alert("Please select an option first.");
+  // Refresh iframe content if needed
+  const iframe = selectedQuestion.querySelector('iframe');
+  if (iframe) {
+    iframe.src = iframe.src; // This will reload the iframe content
   }
+
+  // Update button active state
+  const buttons = document.querySelectorAll('.quiz-menu-button');
+  buttons.forEach(function(btn, index) {
+    btn.classList.remove('active');
+    if (index === q - 1) btn.classList.add('active');
+  });
 }
 
-// Initialize by showing question 1
+// Show the first question on page load
 document.addEventListener("DOMContentLoaded", function() {
   showQuestion(1);
 });
-</script>
+
