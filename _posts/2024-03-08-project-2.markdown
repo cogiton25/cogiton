@@ -23,28 +23,26 @@ description: Put your knowledge of neuroscience terms to the test with five inte
     <button onclick="showQuestion(4)" class="quiz-menu-button">4</button>
     <button onclick="showQuestion(5)" class="quiz-menu-button">5</button>
   </div>
-
-  <!-- Wordle Questions -->
-  <div class="quiz-question" id="question-1" style="display: none;">
-    <iframe src="https://mywordle.strivemath.com/?word=ebjxwe" width="100%" height="600px" style="border: none;"></iframe>
-  </div>
-
-  <div class="quiz-question" id="question-2" style="display: none;">
-    <iframe src="https://mywordle.strivemath.com/?word=yciwtgwz" width="100%" height="600px" style="border: none;"></iframe>
-  </div>
-
-  <div class="quiz-question" id="question-3" style="display: none;">
-    <iframe src="https://mywordle.strivemath.com/?word=xojdw" width="100%" height="600px" style="border: none;"></iframe>
-  </div>
-
-  <div class="quiz-question" id="question-4" style="display: none;">
-    <iframe src="https://mywordle.strivemath.com/?word=xfrly" width="100%" height="600px" style="border: none;"></iframe>
-  </div>
-
-  <div class="quiz-question" id="question-5" style="display: none;">
-    <iframe src="https://mywordle.strivemath.com/?word=pvzqv" width="100%" height="600px" style="border: none;"></iframe>
-  </div>
+<div class="quiz-question" id="question-1" style="display: none;">
+  <iframe src="https://mywordle.strivemath.com/?word=ebjxwe" title="Wordle Puzzle 1" width="100%" height="600px" style="border: none;"></iframe>
 </div>
+
+<div class="quiz-question" id="question-2" style="display: none;">
+  <iframe src="https://mywordle.strivemath.com/?word=yciwtgwz" title="Wordle Puzzle 2" width="100%" height="600px" style="border: none;"></iframe>
+</div>
+
+<div class="quiz-question" id="question-3" style="display: none;">
+  <iframe src="https://mywordle.strivemath.com/?word=xojdw" title="Wordle Puzzle 3" width="100%" height="600px" style="border: none;"></iframe>
+</div>
+
+<div class="quiz-question" id="question-4" style="display: none;">
+  <iframe src="https://mywordle.strivemath.com/?word=xfrly" title="Wordle Puzzle 4" width="100%" height="600px" style="border: none;"></iframe>
+</div>
+
+<div class="quiz-question" id="question-5" style="display: none;">
+  <iframe src="https://mywordle.strivemath.com/?word=pvzqv" title="Wordle Puzzle 5" width="100%" height="600px" style="border: none;"></iframe>
+</div>
+
 
 <style>
 /* Quiz container and menu styling */
