@@ -29,6 +29,7 @@ description:
 
 > CogitOn is led by a team of four researchers at the Max Planck Institute for Human Cognitive and Brain Sciences.
 
+** **
 
 ## 🛠️ Does
 
@@ -47,6 +48,7 @@ description:
 We combine expertise from neuroscience, computer science, linguistics, philosophy, and psychology to create modules that are both fun and informative. This interdisciplinary foundation enables the platform to offer a diverse range of activities for the broader scientific community.
 
 </div>
+** **
 
 <h3 style="text-align: left;">Sharing resources</h3>
 
@@ -56,12 +58,13 @@ We offer a growing library of scientific prompts, mini-games, and literary spin-
 
 </div>
 
+** **
 
 ## 🎯 What
 
 <h3 style="text-align: left;">Five modules</h3>
 
-<h4 style="text-align: left;">*real or not real?*</h4>
+<h4 style="text-align: left;">real or not real?</h4>
 
 <div style="text-align: left;"> 
 
@@ -69,7 +72,7 @@ It can be difficult to tell what information is real and what is fake, especiall
 
 </div>
 
-<h4 style="text-align: left;">*wordle*</h4>
+<h4 style="text-align: left;">wordle</h4>
 
 <div style="text-align: left;"> 
 
@@ -77,7 +80,7 @@ Our wordles feature basic neuroscience terminologies, offering a light and fun g
 
 </div>
 
-<h4 style="text-align: left;">connections*</h4>
+<h4 style="text-align: left;">connections</h4>
 
 <div style="text-align: left;"> 
 
@@ -85,7 +88,7 @@ The connections game invites players to group related neuroscience terms or conc
 
 </div>
 
-<h4 style="text-align: left;">*multiple choice*</h4>
+<h4 style="text-align: left;">multiple choice</h4>
 
 <div style="text-align: left;"> 
 
@@ -93,7 +96,7 @@ Pick THE one!
 
 </div>
 
-<h4 style="text-align: left;">*stories and poems*</h4>
+<h4 style="text-align: left;">stories and poems</h4>
 
 <div style="text-align: left;"> 
 
