@@ -11,119 +11,120 @@ category:
 description: Put your knowledge of neuroscience terms to the test with five interactive Wordle games!
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive iFrame Buttons</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        
-        .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        
-        button {
-            padding: 10px 15px;
-            background-color: #0366d6;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-        
-        button:hover {
-            background-color: #024ea2;
-        }
-        
-        button.active {
-            background-color: #024ea2;
-            box-shadow: 0 0 0 2px rgba(3, 102, 214, 0.3);
-        }
-        
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            height: 500px;
-            border: 1px solid #e1e4e8;
-            border-radius: 6px;
-            overflow: hidden;
-            display: none;
-        }
-        
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
-</head>
-<body>
-    
+<div class="wordle-container" markdown="0">
     <div class="button-container">
-        <button onclick="showIframe('iframe1')">1</button>
-        <button onclick="showIframe('iframe2')">2</button>
-        <button onclick="showIframe('iframe3')">3</button>
-        <button onclick="showIframe('iframe4')">4</button>
-        <button onclick="showIframe('iframe5')">5</button>
+        <button class="wordle-btn" onclick="showWordleIframe('wordle-iframe1')">1</button>
+        <button class="wordle-btn" onclick="showWordleIframe('wordle-iframe2')">2</button>
+        <button class="wordle-btn" onclick="showWordleIframe('wordle-iframe3')">3</button>
+        <button class="wordle-btn" onclick="showWordleIframe('wordle-iframe4')">4</button>
+        <button class="wordle-btn" onclick="showWordleIframe('wordle-iframe5')">5</button>
     </div>
     
-    <div id="iframe1" class="iframe-container">
+    <div id="wordle-iframe1" class="wordle-iframe-container">
        <iframe src="https://mywordle.strivemath.com/?word=ebjxwe" width="100%" height="600px" style="border: none;"></iframe>
     </div>
     
-    <div id="iframe2" class="iframe-container">
-    <iframe src="https://mywordle.strivemath.com/?word=yciwtgwz" width="100%" height="600px" style="border: none;"></iframe>
+    <div id="wordle-iframe2" class="wordle-iframe-container">
+        <iframe src="https://mywordle.strivemath.com/?word=yciwtgwz" width="100%" height="600px" style="border: none;"></iframe>
     </div>
     
-    <div id="iframe3" class="iframe-container">
-    <iframe src="https://mywordle.strivemath.com/?word=xojdw" width="100%" height="600px" style="border: none;"></iframe>
+    <div id="wordle-iframe3" class="wordle-iframe-container">
+        <iframe src="https://mywordle.strivemath.com/?word=xojdw" width="100%" height="600px" style="border: none;"></iframe>
     </div>
     
-    <div id="iframe4" class="iframe-container">
-    <iframe src="https://mywordle.strivemath.com/?word=xfrly" width="100%" height="600px" style="border: none;"></iframe>
+    <div id="wordle-iframe4" class="wordle-iframe-container">
+        <iframe src="https://mywordle.strivemath.com/?word=xfrly" width="100%" height="600px" style="border: none;"></iframe>
     </div>
     
-    <div id="iframe5" class="iframe-container">
-    <iframe src="https://mywordle.strivemath.com/?word=pvzqv" width="100%" height="600px" style="border: none;"></iframe>
+    <div id="wordle-iframe5" class="wordle-iframe-container">
+        <iframe src="https://mywordle.strivemath.com/?word=pvzqv" width="100%" height="600px" style="border: none;"></iframe>
     </div>
+</div>
+
+<style>
+.wordle-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.wordle-btn {
+    padding: 10px 15px;
+    background-color: #0366d6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.wordle-btn:hover {
+    background-color: #024ea2;
+}
+
+.wordle-btn.active {
+    background-color: #024ea2;
+    box-shadow: 0 0 0 2px rgba(3, 102, 214, 0.3);
+}
+
+.wordle-iframe-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    overflow: hidden;
+    display: none;
+}
+
+.wordle-iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+</style>
+
+<script>
+(function() {
+    // Immediately show the first iframe when the page loads
+    window.addEventListener('DOMContentLoaded', function() {
+        showWordleIframe('wordle-iframe1');
+        document.querySelector('.wordle-btn').classList.add('active');
+    });
     
-    <script>
-        function showIframe(iframeId) {
-            // Hide all iframe containers
-            const containers = document.querySelectorAll('.iframe-container');
-            containers.forEach(container => {
-                container.style.display = 'none';
-            });
-            
-            // Remove active class from all buttons
-            const buttons = document.querySelectorAll('button');
-            buttons.forEach(button => {
-                button.classList.remove('active');
-            });
-            
-            // Show the selected iframe container
-            const selectedContainer = document.getElementById(iframeId);
-            if (selectedContainer) {
-                selectedContainer.style.display = 'block';
-            }
-            
-            // Add active class to clicked button
-            const clickedButton = event.currentTarget;
-            clickedButton.classList.add('active');
+    // Make the function available globally
+    window.showWordleIframe = function(iframeId) {
+        // Hide all iframe containers
+        const containers = document.querySelectorAll('.wordle-iframe-container');
+        containers.forEach(function(container) {
+            container.style.display = 'none';
+        });
+        
+        // Remove active class from all buttons
+        const buttons = document.querySelectorAll('.wordle-btn');
+        buttons.forEach(function(button) {
+            button.classList.remove('active');
+        });
+        
+        // Show the selected iframe container
+        const selectedContainer = document.getElementById(iframeId);
+        if (selectedContainer) {
+            selectedContainer.style.display = 'block';
         }
-    </script>
-</body>
-</html>
+        
+        // Add active class to clicked button
+        const clickedButton = event.currentTarget;
+        clickedButton.classList.add('active');
+    };
+})();
+</script>
