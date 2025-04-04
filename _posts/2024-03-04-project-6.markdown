@@ -68,12 +68,7 @@ Pick THE one!
 
 Literary expressions that bring curiosity, wonder, and reflection into dialogue with scientific ideas are values and appreciated.
 
-## 📍 Where
-
-**Max Planck Institute for Human Cognitive and Brain Sciences**
- 
-Stephanstraße 1a, 04103 Leipzig
-
 ## Share our page
 
-<img src="img/portfolio/CogitOn_QR_Code.jpg" />
+![Image](https://github.com/cogiton25/cogiton/tree/main/img/portfolio/CogitOn_QR_Code.jpg)
+
