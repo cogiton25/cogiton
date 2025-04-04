@@ -71,7 +71,7 @@ button.mc-option {
   width: 100%;
   max-width: 300px;
 }
-/* Different pastel colors for each option */
+/* Pastel colors for options */
 button.mc-option.option-a {
   background-color: #C5E1A5; /* Pastel green */
 }
@@ -156,11 +156,11 @@ button.mc-option.option-d {
 
 <script>
 (function(){
-  // Namespace for our Multiple Choice project
+  // Namespace to avoid conflicts with other projects
   const mcProj = {
     selectedCategory: null,
     mcUserChoices: {},
-    // Correct answers mapping for Category 1
+    // Correct answers for Category 1 (mapping question number to correct answer)
     correctAnswers: {
       1: { letter: 'A', text: 'Vascular dementia' },
       2: { letter: 'C', text: 'Causal link to life events' },
@@ -173,8 +173,8 @@ button.mc-option.option-d {
       9: { letter: 'C', text: 'Orexin' },
       10: { letter: 'A', text: 'Thalamus' }
     },
-    // Full quiz HTML for Category 1 (with 10 questions)
-    fullQuizHTML: 
+    // Full quiz HTML for Category 1 with 10 questions
+    fullQuizHTML: `
       <div class="quiz-menu" style="text-align: center; margin-bottom: 20px;">
         <button onclick="mcProj.showQuestion(1)" class="quiz-menu-button">1</button>
         <button onclick="mcProj.showQuestion(2)" class="quiz-menu-button">2</button>
@@ -347,14 +347,14 @@ button.mc-option.option-d {
           <strong>Correct Answer:</strong> <span id="mc-correct-10">Thalamus</span>
         </div>
       </div>
-    ,
-    placeholderHTML: 
+    `,
+    placeholderHTML: `
       <div style="text-align: center; font-size: 20px; margin-top: 30px;">
         Quiz for this category coming soon.
         <br><br>
         <button class="mc-category-button" onclick="mcProj.goBackToCategories()" style="background-color: #2E7D32;">Back to Categories</button>
       </div>
-    ,
+    `,
     selectCategory: function(cat) {
       this.selectedCategory = cat;
       // Hide category selection
@@ -396,13 +396,13 @@ button.mc-option.option-d {
       }
     },
     selectChoice: function(choice, questionNum, event) {
-      // Store both the selected letter and a reference to the button element
+      // Store both the selected letter and reference to the button element
       this.mcUserChoices[questionNum] = { letter: choice, element: event.target };
       const parent = event.target.closest('.button-group');
       const buttons = parent.querySelectorAll('button');
       buttons.forEach(function(btn) {
-        // Reset opacity and background color to default (as defined in CSS)
         btn.style.opacity = '0.6';
+        // Reset any inline background color override
         btn.style.backgroundColor = '';
       });
       event.target.style.opacity = '1';
