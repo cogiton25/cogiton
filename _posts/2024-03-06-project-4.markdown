@@ -11,17 +11,17 @@ category:
 description:
 ---
 
-<div id="mc-project-4">
-  <hr class="quiz-separator">
-  <h3 style="text-align: center;">Multiple Choice Quiz</h3>
+<hr class="quiz-separator">
+<h3 style="text-align: center;">Multiple Choice Quiz</h3>
 
+<div id="mc-project-4">
   <!-- Category Selection (initially visible) -->
   <div id="mc-category-selection" style="text-align: center; margin-bottom: 30px;">
     <h2>Select a Category</h2>
-    <button class="mc-category-button" onclick="mcProj.selectCategory(1)" style="background-color: #2E7D32;">Clinical Neuro & Psych</button>
-    <button class="mc-category-button" onclick="mcProj.selectCategory(2)" style="background-color: #388E3C;">Cognitive Neuro</button>
-    <button class="mc-category-button" onclick="mcProj.selectCategory(3)" style="background-color: #43A047;">Neuroanatomy</button>
-    <button class="mc-category-button" onclick="mcProj.selectCategory(4)" style="background-color: #4CAF50;">Cognitive Science</button>
+    <button class="mc-category-button" onclick="mcProj.selectCategory(1)" style="background-color: #2E7D32;">Category 1</button>
+    <button class="mc-category-button" onclick="mcProj.selectCategory(2)" style="background-color: #388E3C;">Category 2</button>
+    <button class="mc-category-button" onclick="mcProj.selectCategory(3)" style="background-color: #43A047;">Category 3</button>
+    <button class="mc-category-button" onclick="mcProj.selectCategory(4)" style="background-color: #4CAF50;">Category 4</button>
   </div>
 
   <!-- Quiz Container (initially hidden) -->
@@ -39,7 +39,7 @@ description:
       <button onclick="mcProj.showQuestion(9)" class="quiz-menu-button">9</button>
       <button onclick="mcProj.showQuestion(10)" class="quiz-menu-button">10</button>
     </div>
-
+    
     <!-- Question 1 -->
     <div class="quiz-question" id="mc-question-1">
       <div class="statement">[Placeholder for Question 1: Insert your question here]</div>
@@ -53,7 +53,7 @@ description:
         <strong>Correct Answer:</strong> Option <span id="mc-correct-1">B</span>
       </div>
     </div>
-
+    
     <!-- Question 2 -->
     <div class="quiz-question" id="mc-question-2" style="display: none;">
       <div class="statement">[Placeholder for Question 2: Insert your question here]</div>
@@ -67,7 +67,7 @@ description:
         <strong>Correct Answer:</strong> Option <span id="mc-correct-2">B</span>
       </div>
     </div>
-
+    
     <!-- Question 3 Placeholder -->
     <div class="quiz-question" id="mc-question-3" style="display: none;">
       <div class="statement">[Placeholder for Question 3: Coming soon]</div>
@@ -81,7 +81,7 @@ description:
         <strong>Correct Answer:</strong> Option <span id="mc-correct-3">B</span>
       </div>
     </div>
-
+    
     <!-- Question 4 Placeholder -->
     <div class="quiz-question" id="mc-question-4" style="display: none;">
       <div class="statement">[Placeholder for Question 4: Coming soon]</div>
@@ -95,7 +95,7 @@ description:
         <strong>Correct Answer:</strong> Option <span id="mc-correct-4">B</span>
       </div>
     </div>
-
+    
     <!-- Question 5 Placeholder -->
     <div class="quiz-question" id="mc-question-5" style="display: none;">
       <div class="statement">[Placeholder for Question 5: Coming soon]</div>
@@ -109,7 +109,7 @@ description:
         <strong>Correct Answer:</strong> Option <span id="mc-correct-5">B</span>
       </div>
     </div>
-
+    
     <!-- Question 6 Placeholder -->
     <div class="quiz-question" id="mc-question-6" style="display: none;">
       <div class="statement">[Placeholder for Question 6: Coming soon]</div>
@@ -123,7 +123,7 @@ description:
         <strong>Correct Answer:</strong> Option <span id="mc-correct-6">B</span>
       </div>
     </div>
-
+    
     <!-- Question 7 Placeholder -->
     <div class="quiz-question" id="mc-question-7" style="display: none;">
       <div class="statement">[Placeholder for Question 7: Coming soon]</div>
@@ -137,7 +137,7 @@ description:
         <strong>Correct Answer:</strong> Option <span id="mc-correct-7">B</span>
       </div>
     </div>
-
+    
     <!-- Question 8 Placeholder -->
     <div class="quiz-question" id="mc-question-8" style="display: none;">
       <div class="statement">[Placeholder for Question 8: Coming soon]</div>
@@ -151,7 +151,7 @@ description:
         <strong>Correct Answer:</strong> Option <span id="mc-correct-8">B</span>
       </div>
     </div>
-
+    
     <!-- Question 9 Placeholder -->
     <div class="quiz-question" id="mc-question-9" style="display: none;">
       <div class="statement">[Placeholder for Question 9: Coming soon]</div>
@@ -165,7 +165,7 @@ description:
         <strong>Correct Answer:</strong> Option <span id="mc-correct-9">B</span>
       </div>
     </div>
-
+    
     <!-- Question 10 Placeholder -->
     <div class="quiz-question" id="mc-question-10" style="display: none;">
       <div class="statement">[Placeholder for Question 10: Coming soon]</div>
@@ -183,9 +183,9 @@ description:
 </div>
 
 <style>
-/* Scoped styles for this multiple choice project */
+/* Scoped styles for the Multiple Choice project */
 #mc-project-4 {
-  /* Container-specific styling if needed */
+  /* Container-specific styles if needed */
 }
 
 /* Category Selection */
@@ -206,7 +206,7 @@ description:
   border: 4px solid #000;
 }
 
-/* General styles for the quiz interface */
+/* General quiz interface styles */
 .statement {
   font-size: 20px;
   margin-bottom: 20px;
@@ -218,3 +218,118 @@ button.mc-option {
   font-size: 16px;
   padding: 8px 16px;
   margin: 8px 0;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+.confirm-btn {
+  background-color: #008CBA;
+  margin-top: 20px;
+}
+.answer {
+  font-size: 16px;
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #e0f7fa;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Quiz container and menu styling */
+.quiz-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+.quiz-menu {
+  margin-bottom: 20px;
+}
+.quiz-menu-button {
+  font-size: 16px;
+  padding: 6px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #008CBA;
+  background-color: #008CBA;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.quiz-menu-button:hover {
+  background-color: #006494;
+}
+.quiz-menu-button.active {
+  background-color: #006494;
+}
+
+/* Optional separator style */
+.quiz-separator {
+  margin: 40px auto;
+  max-width: 800px;
+  border: none;
+  border-top: 2px solid #ddd;
+}
+</style>
+
+<script>
+(function(){
+  // Namespace to avoid conflicts with other projects
+  const mcProj = {
+    selectedCategory: null,
+    mcUserChoices: {},
+    selectCategory: function(cat) {
+      this.selectedCategory = cat;
+      // Hide category selection and show quiz container
+      document.getElementById('mc-category-selection').style.display = 'none';
+      document.getElementById('mc-quiz-container').style.display = 'block';
+      // Optionally update a header or indicator here for the chosen category
+      this.showQuestion(1);
+    },
+    showQuestion: function(q) {
+      // Hide all questions within the quiz container
+      const questions = document.querySelectorAll('#mc-quiz-container .quiz-question');
+      questions.forEach(function(qEl) {
+        qEl.style.display = 'none';
+      });
+      // Display the selected question
+      const selected = document.getElementById('mc-question-' + q);
+      if(selected) {
+        selected.style.display = 'block';
+      }
+      // Update active state for quiz menu buttons
+      const menuButtons = document.querySelectorAll('#mc-quiz-container .quiz-menu-button');
+      menuButtons.forEach(function(btn){
+        btn.classList.remove('active');
+      });
+      if(menuButtons[q-1]) {
+        menuButtons[q-1].classList.add('active');
+      }
+    },
+    selectChoice: function(choice, questionNum, event) {
+      this.mcUserChoices[questionNum] = choice;
+      const parent = event.target.closest('.button-group');
+      const buttons = parent.querySelectorAll('button');
+      buttons.forEach(function(btn) {
+        btn.style.opacity = '0.6';
+      });
+      event.target.style.opacity = '1';
+    },
+    confirmChoice: function(questionNum) {
+      if(this.mcUserChoices[questionNum]) {
+        document.getElementById('mc-answer-' + questionNum).style.display = 'block';
+      } else {
+        alert("Please select an option first.");
+      }
+    }
+  };
+  window.mcProj = mcProj;
+})();
+</script>
