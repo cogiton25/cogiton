@@ -42,25 +42,25 @@ We offer a growing library of scientific prompts, mini-games, and literary spin-
 
 <h2 style="text-align: left;">🎯 What</h2>
 
-### **Five modules**
+<h3 style="text-align: left;">Five modules</h3>
 
-#### *real or not real?*
+<h4 style="text-align: left;">*real or not real?*</h4>
 
 It can be difficult to tell what information is real and what is fake, especially with the rise of AI-generated news and science content and clickbait marketing tactics. We present a few examples for you to read and decide whether the information is real or not real, underlining the importance of reading thoroughly about a topic before believing the first thing you hear!
 
-#### *wordle*
+<h4 style="text-align: left;">*wordle*</h4>
 
 Our wordles feature basic neuroscience terminologies, offering a light and fun game for all :D
 
-#### *connections*
+<h4 style="text-align: left;">connections*</h4>
 
 The connections game invites players to group related neuroscience terms or concepts, ranging from brain regions named after scientists to color-based idioms for emotions. 
 
-#### *multiple choice*
+<h4 style="text-align: left;">*multiple choice*</h4>
 
 Pick THE one!
 
-#### *stories and poems*
+<h4 style="text-align: left;">*stories and poems*</h4>
 
 Literary expressions that bring curiosity, wonder, and reflection into dialogue with scientific ideas are values and appreciated.
 
