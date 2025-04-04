@@ -5,8 +5,8 @@ modal-id: 2
 date: 2024-03-08
 img: wordle_header.png
 alt: image-alt
-project-date: April 2024
-client: Start 
+project-date: April 2025
+client:  
 category: 
 description: Put your knowledge of neuroscience terms to the test with five interactive Wordle games!
 ---
@@ -55,6 +55,8 @@ description: Put your knowledge of neuroscience terms to the test with five inte
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
+    justify-content: center;
+
 }
 
 .wordle-btn {
