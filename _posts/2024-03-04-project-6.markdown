@@ -28,7 +28,7 @@ description:
 
 ## 🛠️ Does
 
-<div style="text-align: left;">
+<div style="text-align: left;"> 
 
 ### **Designing interactive and educational projects**  
  
