@@ -16,6 +16,8 @@ description:
 
 <img src="img/portfolio/team.jpg" width="600" />
 
+<div style="text-align: left;"> 
+
 **Marian Simarro**, PhD Candidate, Max Planck School of Cognition (second left)
 
 **Ananda Bajric**, PhD Candidate, Max Planck School of Cognition (far right)
@@ -23,6 +25,8 @@ description:
 **Aoran Song**, PhD Candidate, Max Planck School of Cognition (far left)
 
 **Lydia Wiernik**, Guest Researcher, Max Planck Institute for Human Cognitive and Brain Sciences (second right)
+
+</div>
 
 > CogitOn is led by a team of four researchers at the Max Planck Institute for Human Cognitive and Brain Sciences.
 
@@ -36,6 +40,8 @@ description:
 
 </div>
 
+<br>
+
 ### **Combining expertise within the field of cognitive science**
 
 <div style="text-align: left;"> 
@@ -43,6 +49,8 @@ description:
 We combine expertise from neuroscience, computer science, linguistics, philosophy, and psychology to create modules that are both fun and informative. This interdisciplinary foundation enables the platform to offer a diverse range of activities for the broader scientific community.
 
 </div>
+
+<br>
 
 ### **Sharing resources**
 
@@ -52,9 +60,13 @@ We offer a growing library of scientific prompts, mini-games, and literary spin-
 
 </div>
 
+<br>
+
 ## 🎯 What
 
 <h3 style="text-align: left;">Five modules</h3>
+
+<br>
 
 <h4 style="text-align: left;">*real or not real?*</h4>
 
@@ -64,6 +76,8 @@ It can be difficult to tell what information is real and what is fake, especiall
 
 </div>
 
+<br>
+
 <h4 style="text-align: left;">*wordle*</h4>
 
 <div style="text-align: left;"> 
@@ -71,6 +85,8 @@ It can be difficult to tell what information is real and what is fake, especiall
 Our wordles feature basic neuroscience terminologies, offering a light and fun game for all :D
 
 </div>
+
+<br>
 
 <h4 style="text-align: left;">connections*</h4>
 
@@ -80,6 +96,8 @@ The connections game invites players to group related neuroscience terms or conc
 
 </div>
 
+<br>
+
 <h4 style="text-align: left;">*multiple choice*</h4>
 
 <div style="text-align: left;"> 
@@ -87,6 +105,8 @@ The connections game invites players to group related neuroscience terms or conc
 Pick THE one!
 
 </div>
+
+<br>
 
 <h4 style="text-align: left;">*stories and poems*</h4>
 
@@ -96,7 +116,9 @@ Literary expressions that bring curiosity, wonder, and reflection into dialogue 
 
 </div>
 
-## Share our page
+<br>
+
+## 💌 Share our page
 
 ![Image](img/portfolio/CogitOn_QR_Code.png)
 
