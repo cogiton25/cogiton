@@ -11,166 +11,201 @@ category:
 description:
 ---
 
-<hr class="quiz-separator">
-<h3 style="text-align: center;">Multiple Choice Quiz</h3>
+<div id="mc-project-4">
+  <hr class="quiz-separator">
+  <h3 style="text-align: center;">Multiple Choice Quiz</h3>
 
-<div class="quiz-container">
-  <!-- Quiz Menu -->
-  <div class="quiz-menu" style="text-align: center; margin-bottom: 20px;">
-    <button onclick="showMCQuestion(1)" class="quiz-menu-button">1</button>
-    <button onclick="showMCQuestion(2)" class="quiz-menu-button">2</button>
-    <button onclick="showMCQuestion(3)" class="quiz-menu-button">3</button>
-    <button onclick="showMCQuestion(4)" class="quiz-menu-button">4</button>
-    <button onclick="showMCQuestion(5)" class="quiz-menu-button">5</button>
-    <button onclick="showMCQuestion(6)" class="quiz-menu-button">6</button>
-    <button onclick="showMCQuestion(7)" class="quiz-menu-button">7</button>
-    <button onclick="showMCQuestion(8)" class="quiz-menu-button">8</button>
-    <button onclick="showMCQuestion(9)" class="quiz-menu-button">9</button>
-    <button onclick="showMCQuestion(10)" class="quiz-menu-button">10</button>
+  <!-- Category Selection (initially visible) -->
+  <div id="mc-category-selection" style="text-align: center; margin-bottom: 30px;">
+    <h2>Select a Category</h2>
+    <button class="mc-category-button" onclick="mcProj.selectCategory(1)" style="background-color: #2E7D32;">Clinical Neuro & Psych</button>
+    <button class="mc-category-button" onclick="mcProj.selectCategory(2)" style="background-color: #388E3C;">Cognitive Neuro</button>
+    <button class="mc-category-button" onclick="mcProj.selectCategory(3)" style="background-color: #43A047;">Neuroanatomy</button>
+    <button class="mc-category-button" onclick="mcProj.selectCategory(4)" style="background-color: #4CAF50;">Cognitive Science</button>
   </div>
-  
-  <!-- Question 1 -->
-  <div class="quiz-question" id="mc-question-1">
-    <div class="statement">[Placeholder for Question 1: Insert your question here]</div>
-    <div class="button-group">
-      <button class="mc-option" onclick="selectMCChoice('A', 1, event)">Option A</button>
-      <button class="mc-option" onclick="selectMCChoice('B', 1, event)">Option B</button>
-      <button class="mc-option" onclick="selectMCChoice('C', 1, event)">Option C</button>
+
+  <!-- Quiz Container (initially hidden) -->
+  <div id="mc-quiz-container" style="display: none;">
+    <!-- Quiz Menu -->
+    <div class="quiz-menu" style="text-align: center; margin-bottom: 20px;">
+      <button onclick="mcProj.showQuestion(1)" class="quiz-menu-button">1</button>
+      <button onclick="mcProj.showQuestion(2)" class="quiz-menu-button">2</button>
+      <button onclick="mcProj.showQuestion(3)" class="quiz-menu-button">3</button>
+      <button onclick="mcProj.showQuestion(4)" class="quiz-menu-button">4</button>
+      <button onclick="mcProj.showQuestion(5)" class="quiz-menu-button">5</button>
+      <button onclick="mcProj.showQuestion(6)" class="quiz-menu-button">6</button>
+      <button onclick="mcProj.showQuestion(7)" class="quiz-menu-button">7</button>
+      <button onclick="mcProj.showQuestion(8)" class="quiz-menu-button">8</button>
+      <button onclick="mcProj.showQuestion(9)" class="quiz-menu-button">9</button>
+      <button onclick="mcProj.showQuestion(10)" class="quiz-menu-button">10</button>
     </div>
-    <button class="confirm-btn" onclick="confirmMCChoice(1)">Confirm</button>
-    <div class="answer" id="mc-answer-1">
-      <strong>Correct Answer:</strong> Option <span id="mc-correct-1">B</span>
+
+    <!-- Question 1 -->
+    <div class="quiz-question" id="mc-question-1">
+      <div class="statement">[Placeholder for Question 1: Insert your question here]</div>
+      <div class="button-group">
+        <button class="mc-option" onclick="mcProj.selectChoice('A', 1, event)">Option A</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('B', 1, event)">Option B</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('C', 1, event)">Option C</button>
+      </div>
+      <button class="confirm-btn" onclick="mcProj.confirmChoice(1)">Confirm</button>
+      <div class="answer" id="mc-answer-1">
+        <strong>Correct Answer:</strong> Option <span id="mc-correct-1">B</span>
+      </div>
     </div>
-  </div>
-  
-  <!-- Question 2 -->
-  <div class="quiz-question" id="mc-question-2" style="display: none;">
-    <div class="statement">[Placeholder for Question 2: Insert your question here]</div>
-    <div class="button-group">
-      <button class="mc-option" onclick="selectMCChoice('A', 2, event)">Option A</button>
-      <button class="mc-option" onclick="selectMCChoice('B', 2, event)">Option B</button>
-      <button class="mc-option" onclick="selectMCChoice('C', 2, event)">Option C</button>
+
+    <!-- Question 2 -->
+    <div class="quiz-question" id="mc-question-2" style="display: none;">
+      <div class="statement">[Placeholder for Question 2: Insert your question here]</div>
+      <div class="button-group">
+        <button class="mc-option" onclick="mcProj.selectChoice('A', 2, event)">Option A</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('B', 2, event)">Option B</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('C', 2, event)">Option C</button>
+      </div>
+      <button class="confirm-btn" onclick="mcProj.confirmChoice(2)">Confirm</button>
+      <div class="answer" id="mc-answer-2">
+        <strong>Correct Answer:</strong> Option <span id="mc-correct-2">B</span>
+      </div>
     </div>
-    <button class="confirm-btn" onclick="confirmMCChoice(2)">Confirm</button>
-    <div class="answer" id="mc-answer-2">
-      <strong>Correct Answer:</strong> Option <span id="mc-correct-2">B</span>
+
+    <!-- Question 3 Placeholder -->
+    <div class="quiz-question" id="mc-question-3" style="display: none;">
+      <div class="statement">[Placeholder for Question 3: Coming soon]</div>
+      <div class="button-group">
+        <button class="mc-option" onclick="mcProj.selectChoice('A', 3, event)">Option A</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('B', 3, event)">Option B</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('C', 3, event)">Option C</button>
+      </div>
+      <button class="confirm-btn" onclick="mcProj.confirmChoice(3)">Confirm</button>
+      <div class="answer" id="mc-answer-3">
+        <strong>Correct Answer:</strong> Option <span id="mc-correct-3">B</span>
+      </div>
     </div>
-  </div>
-  
-  <!-- Question 3 Placeholder -->
-  <div class="quiz-question" id="mc-question-3" style="display: none;">
-    <div class="statement">[Placeholder for Question 3: Coming soon]</div>
-    <div class="button-group">
-      <button class="mc-option" onclick="selectMCChoice('A', 3, event)">Option A</button>
-      <button class="mc-option" onclick="selectMCChoice('B', 3, event)">Option B</button>
-      <button class="mc-option" onclick="selectMCChoice('C', 3, event)">Option C</button>
+
+    <!-- Question 4 Placeholder -->
+    <div class="quiz-question" id="mc-question-4" style="display: none;">
+      <div class="statement">[Placeholder for Question 4: Coming soon]</div>
+      <div class="button-group">
+        <button class="mc-option" onclick="mcProj.selectChoice('A', 4, event)">Option A</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('B', 4, event)">Option B</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('C', 4, event)">Option C</button>
+      </div>
+      <button class="confirm-btn" onclick="mcProj.confirmChoice(4)">Confirm</button>
+      <div class="answer" id="mc-answer-4">
+        <strong>Correct Answer:</strong> Option <span id="mc-correct-4">B</span>
+      </div>
     </div>
-    <button class="confirm-btn" onclick="confirmMCChoice(3)">Confirm</button>
-    <div class="answer" id="mc-answer-3">
-      <strong>Correct Answer:</strong> Option <span id="mc-correct-3">B</span>
+
+    <!-- Question 5 Placeholder -->
+    <div class="quiz-question" id="mc-question-5" style="display: none;">
+      <div class="statement">[Placeholder for Question 5: Coming soon]</div>
+      <div class="button-group">
+        <button class="mc-option" onclick="mcProj.selectChoice('A', 5, event)">Option A</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('B', 5, event)">Option B</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('C', 5, event)">Option C</button>
+      </div>
+      <button class="confirm-btn" onclick="mcProj.confirmChoice(5)">Confirm</button>
+      <div class="answer" id="mc-answer-5">
+        <strong>Correct Answer:</strong> Option <span id="mc-correct-5">B</span>
+      </div>
     </div>
-  </div>
-  
-  <!-- Question 4 Placeholder -->
-  <div class="quiz-question" id="mc-question-4" style="display: none;">
-    <div class="statement">[Placeholder for Question 4: Coming soon]</div>
-    <div class="button-group">
-      <button class="mc-option" onclick="selectMCChoice('A', 4, event)">Option A</button>
-      <button class="mc-option" onclick="selectMCChoice('B', 4, event)">Option B</button>
-      <button class="mc-option" onclick="selectMCChoice('C', 4, event)">Option C</button>
+
+    <!-- Question 6 Placeholder -->
+    <div class="quiz-question" id="mc-question-6" style="display: none;">
+      <div class="statement">[Placeholder for Question 6: Coming soon]</div>
+      <div class="button-group">
+        <button class="mc-option" onclick="mcProj.selectChoice('A', 6, event)">Option A</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('B', 6, event)">Option B</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('C', 6, event)">Option C</button>
+      </div>
+      <button class="confirm-btn" onclick="mcProj.confirmChoice(6)">Confirm</button>
+      <div class="answer" id="mc-answer-6">
+        <strong>Correct Answer:</strong> Option <span id="mc-correct-6">B</span>
+      </div>
     </div>
-    <button class="confirm-btn" onclick="confirmMCChoice(4)">Confirm</button>
-    <div class="answer" id="mc-answer-4">
-      <strong>Correct Answer:</strong> Option <span id="mc-correct-4">B</span>
+
+    <!-- Question 7 Placeholder -->
+    <div class="quiz-question" id="mc-question-7" style="display: none;">
+      <div class="statement">[Placeholder for Question 7: Coming soon]</div>
+      <div class="button-group">
+        <button class="mc-option" onclick="mcProj.selectChoice('A', 7, event)">Option A</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('B', 7, event)">Option B</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('C', 7, event)">Option C</button>
+      </div>
+      <button class="confirm-btn" onclick="mcProj.confirmChoice(7)">Confirm</button>
+      <div class="answer" id="mc-answer-7">
+        <strong>Correct Answer:</strong> Option <span id="mc-correct-7">B</span>
+      </div>
     </div>
-  </div>
-  
-  <!-- Question 5 Placeholder -->
-  <div class="quiz-question" id="mc-question-5" style="display: none;">
-    <div class="statement">[Placeholder for Question 5: Coming soon]</div>
-    <div class="button-group">
-      <button class="mc-option" onclick="selectMCChoice('A', 5, event)">Option A</button>
-      <button class="mc-option" onclick="selectMCChoice('B', 5, event)">Option B</button>
-      <button class="mc-option" onclick="selectMCChoice('C', 5, event)">Option C</button>
+
+    <!-- Question 8 Placeholder -->
+    <div class="quiz-question" id="mc-question-8" style="display: none;">
+      <div class="statement">[Placeholder for Question 8: Coming soon]</div>
+      <div class="button-group">
+        <button class="mc-option" onclick="mcProj.selectChoice('A', 8, event)">Option A</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('B', 8, event)">Option B</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('C', 8, event)">Option C</button>
+      </div>
+      <button class="confirm-btn" onclick="mcProj.confirmChoice(8)">Confirm</button>
+      <div class="answer" id="mc-answer-8">
+        <strong>Correct Answer:</strong> Option <span id="mc-correct-8">B</span>
+      </div>
     </div>
-    <button class="confirm-btn" onclick="confirmMCChoice(5)">Confirm</button>
-    <div class="answer" id="mc-answer-5">
-      <strong>Correct Answer:</strong> Option <span id="mc-correct-5">B</span>
+
+    <!-- Question 9 Placeholder -->
+    <div class="quiz-question" id="mc-question-9" style="display: none;">
+      <div class="statement">[Placeholder for Question 9: Coming soon]</div>
+      <div class="button-group">
+        <button class="mc-option" onclick="mcProj.selectChoice('A', 9, event)">Option A</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('B', 9, event)">Option B</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('C', 9, event)">Option C</button>
+      </div>
+      <button class="confirm-btn" onclick="mcProj.confirmChoice(9)">Confirm</button>
+      <div class="answer" id="mc-answer-9">
+        <strong>Correct Answer:</strong> Option <span id="mc-correct-9">B</span>
+      </div>
     </div>
-  </div>
-  
-  <!-- Question 6 Placeholder -->
-  <div class="quiz-question" id="mc-question-6" style="display: none;">
-    <div class="statement">[Placeholder for Question 6: Coming soon]</div>
-    <div class="button-group">
-      <button class="mc-option" onclick="selectMCChoice('A', 6, event)">Option A</button>
-      <button class="mc-option" onclick="selectMCChoice('B', 6, event)">Option B</button>
-      <button class="mc-option" onclick="selectMCChoice('C', 6, event)">Option C</button>
-    </div>
-    <button class="confirm-btn" onclick="confirmMCChoice(6)">Confirm</button>
-    <div class="answer" id="mc-answer-6">
-      <strong>Correct Answer:</strong> Option <span id="mc-correct-6">B</span>
-    </div>
-  </div>
-  
-  <!-- Question 7 Placeholder -->
-  <div class="quiz-question" id="mc-question-7" style="display: none;">
-    <div class="statement">[Placeholder for Question 7: Coming soon]</div>
-    <div class="button-group">
-      <button class="mc-option" onclick="selectMCChoice('A', 7, event)">Option A</button>
-      <button class="mc-option" onclick="selectMCChoice('B', 7, event)">Option B</button>
-      <button class="mc-option" onclick="selectMCChoice('C', 7, event)">Option C</button>
-    </div>
-    <button class="confirm-btn" onclick="confirmMCChoice(7)">Confirm</button>
-    <div class="answer" id="mc-answer-7">
-      <strong>Correct Answer:</strong> Option <span id="mc-correct-7">B</span>
-    </div>
-  </div>
-  
-  <!-- Question 8 Placeholder -->
-  <div class="quiz-question" id="mc-question-8" style="display: none;">
-    <div class="statement">[Placeholder for Question 8: Coming soon]</div>
-    <div class="button-group">
-      <button class="mc-option" onclick="selectMCChoice('A', 8, event)">Option A</button>
-      <button class="mc-option" onclick="selectMCChoice('B', 8, event)">Option B</button>
-      <button class="mc-option" onclick="selectMCChoice('C', 8, event)">Option C</button>
-    </div>
-    <button class="confirm-btn" onclick="confirmMCChoice(8)">Confirm</button>
-    <div class="answer" id="mc-answer-8">
-      <strong>Correct Answer:</strong> Option <span id="mc-correct-8">B</span>
-    </div>
-  </div>
-  
-  <!-- Question 9 Placeholder -->
-  <div class="quiz-question" id="mc-question-9" style="display: none;">
-    <div class="statement">[Placeholder for Question 9: Coming soon]</div>
-    <div class="button-group">
-      <button class="mc-option" onclick="selectMCChoice('A', 9, event)">Option A</button>
-      <button class="mc-option" onclick="selectMCChoice('B', 9, event)">Option B</button>
-      <button class="mc-option" onclick="selectMCChoice('C', 9, event)">Option C</button>
-    </div>
-    <button class="confirm-btn" onclick="confirmMCChoice(9)">Confirm</button>
-    <div class="answer" id="mc-answer-9">
-      <strong>Correct Answer:</strong> Option <span id="mc-correct-9">B</span>
-    </div>
-  </div>
-  
-  <!-- Question 10 Placeholder -->
-  <div class="quiz-question" id="mc-question-10" style="display: none;">
-    <div class="statement">[Placeholder for Question 10: Coming soon]</div>
-    <div class="button-group">
-      <button class="mc-option" onclick="selectMCChoice('A', 10, event)">Option A</button>
-      <button class="mc-option" onclick="selectMCChoice('B', 10, event)">Option B</button>
-      <button class="mc-option" onclick="selectMCChoice('C', 10, event)">Option C</button>
-    </div>
-    <button class="confirm-btn" onclick="confirmMCChoice(10)">Confirm</button>
-    <div class="answer" id="mc-answer-10">
-      <strong>Correct Answer:</strong> Option <span id="mc-correct-10">B</span>
+
+    <!-- Question 10 Placeholder -->
+    <div class="quiz-question" id="mc-question-10" style="display: none;">
+      <div class="statement">[Placeholder for Question 10: Coming soon]</div>
+      <div class="button-group">
+        <button class="mc-option" onclick="mcProj.selectChoice('A', 10, event)">Option A</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('B', 10, event)">Option B</button>
+        <button class="mc-option" onclick="mcProj.selectChoice('C', 10, event)">Option C</button>
+      </div>
+      <button class="confirm-btn" onclick="mcProj.confirmChoice(10)">Confirm</button>
+      <div class="answer" id="mc-answer-10">
+        <strong>Correct Answer:</strong> Option <span id="mc-correct-10">B</span>
+      </div>
     </div>
   </div>
 </div>
 
 <style>
+/* Scoped styles for this multiple choice project */
+#mc-project-4 {
+  /* Container-specific styling if needed */
+}
+
+/* Category Selection */
+.mc-category-button {
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid #000;
+  color: white;
+  border-radius: 8px;
+  transition: opacity 0.3s;
+}
+.mc-category-button:hover {
+  opacity: 0.8;
+}
+.mc-category-button.active {
+  border: 4px solid #000;
+}
+
 /* General styles for the quiz interface */
 .statement {
   font-size: 20px;
@@ -179,113 +214,7 @@ description:
 .button-group {
   margin-bottom: 20px;
 }
-button {
+button.mc-option {
   font-size: 16px;
   padding: 8px 16px;
-  margin: 0 10px;
-  cursor: pointer;
-  border: none;
-  color: white;
-  border-radius: 5px;
-}
-.mc-option { background-color: #4CAF50; }
-.confirm-btn { background-color: #008CBA; margin-top: 20px; }
-.answer {
-  font-size: 16px;
-  display: none;
-  margin-top: 20px;
-  padding: 15px;
-  border-radius: 8px;
-  background-color: #e0f7fa;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Quiz container and menu styling */
-.quiz-container {
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 800px;
-  margin: 20px auto;
-}
-.quiz-menu {
-  margin-bottom: 20px;
-}
-.quiz-menu-button {
-  font-size: 16px;
-  padding: 6px 12px;
-  margin: 0 5px;
-  cursor: pointer;
-  border: 1px solid #008CBA;
-  background-color: #008CBA;
-  color: white;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-.quiz-menu-button:hover {
-  background-color: #006494;
-}
-.quiz-menu-button.active {
-  background-color: #006494;
-}
-
-/* Optional separator style */
-.quiz-separator {
-  margin: 40px auto;
-  max-width: 800px;
-  border: none;
-  border-top: 2px solid #ddd;
-}
-</style>
-
-<script>
-// Object to store user's choices for each multiple-choice question
-let mcUserChoices = {};
-
-// Function to show a specific multiple-choice question and update the menu's active state
-function showMCQuestion(q) {
-  // Hide all multiple-choice questions
-  const questions = document.querySelectorAll('.quiz-question');
-  questions.forEach(function(qEl) {
-    qEl.style.display = 'none';
-  });
-  document.getElementById('mc-question-' + q).style.display = 'block';
-  
-  // Update menu button active state
-  const menuButtons = document.querySelectorAll('.quiz-menu-button');
-  menuButtons.forEach(function(btn) {
-    btn.classList.remove('active');
-  });
-  // Activate the current question's button (assumes buttons are in order)
-  document.querySelector('.quiz-menu-button:nth-child(' + q + ')').classList.add('active');
-}
-
-// Function to register a user's choice for a given multiple-choice question
-function selectMCChoice(choice, questionNum, event) {
-  mcUserChoices[questionNum] = choice;
-  // Reset opacity for all buttons in this question's button group
-  const parent = event.target.closest('.button-group');
-  const buttons = parent.querySelectorAll('button');
-  buttons.forEach(function(btn) {
-    btn.style.opacity = '0.6';
-  });
-  event.target.style.opacity = '1';
-}
-
-// Function to confirm a user's choice and show the answer for a given multiple-choice question
-function confirmMCChoice(questionNum) {
-  if (mcUserChoices[questionNum]) {
-    document.getElementById('mc-answer-' + questionNum).style.display = 'block';
-    // Here you could add additional logic to highlight the correct answer if needed.
-  } else {
-    alert("Please select an option first.");
-  }
-}
-
-// Initialize by showing multiple-choice question 1 when the page loads
-document.addEventListener("DOMContentLoaded", function() {
-  showMCQuestion(1);
-});
-</script>
+  margin: 8px 0;
