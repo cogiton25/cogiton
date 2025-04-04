@@ -15,7 +15,7 @@ description: Get creative!
 
   <div class="text-center">
     <p class="text-sm text-gray-500 mt-1">Submitted on: April 3, 2025</p>
-    ** ** 
+    
     <div class="prose prose-lg">
       <p>It would be <strong>Grand</strong><br>
       it would be swell<br>
