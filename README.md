@@ -38,7 +38,7 @@ CogitOn is developed by researchers at the **Max Planck Institute for Human Cogn
 
 ## 💡 Features
 
-- Interdisciplinary science content (neuroscience, CS, linguistics, psychology, philosophy)
+- Interdisciplinary science content (cognitive sciences, artificial intelligence, linguistics, psychology, philosophy)
 - Interactive mini-games and challenges
 - Literary and artistic content
 - Open and accessible to scientists, students, and curious minds alike
