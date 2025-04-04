@@ -23,7 +23,6 @@ description: Get creative!
       <p>It would be <strong>Grand</strong><br>
       it would be swell<br>
       if only I remembered well.</p>
-
       <p>Tip-of-tongue, yet I can’t explain<br>
       this world of pain—<br>
       mere tricks of my brain.</p>
