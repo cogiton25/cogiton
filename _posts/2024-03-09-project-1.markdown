@@ -127,10 +127,7 @@ description: >-
     <br>(<a href="https://doi.org/10.1371/journal.pone.0105225" target="_blank">DOI: 10.1371/journal.pone.0105225</a>)
   </div>
 </div>
-
-
-    </div>
-  </div>        
+       
 <!-- Question 8 -->
   <div class="quiz-question" id="question-8" style="display: none;">
     <div class="statement">Substance-Use-Disorders exhibit to ~20 years of potential life lost..</div>
@@ -145,8 +142,7 @@ description: >-
   </div>  
 
 
-    </div>
-  </div>
+<!-- Question 9 -->
  <div class="quiz-question" id="question-9" style="display: none;">
   <div class="statement">Plants can "hear" the sound of water and grow their roots toward it.</div>
   <div class="button-group">
@@ -160,8 +156,8 @@ description: >-
   </div>
 </div>
 
-  
-  <!-- Question 10 Placeholder -->
+
+  <!-- Question 10  -->
 <div class="quiz-question" id="question-10" style="display: none;">
   <div class="statement">Octopuses throw objects at each other, possibly out of spite.</div>
   <div class="button-group">
